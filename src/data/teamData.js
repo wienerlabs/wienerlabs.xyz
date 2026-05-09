@@ -5,8 +5,8 @@ import antigaporiaImg from "../assets/images/team-pfp/antigaporia.png";
 import thatbirdImg from "../assets/images/team-pfp/thatbird.png";
 import dilemmaImg from "../assets/images/team-pfp/dilemma.png";
 import uchinagaeriImg from "../assets/images/team-pfp/uchinagaeri.png";
-import portisAramsosImg from "../assets/images/team-pfp/portis-aramsos.png";
-import rocheThatarImg from "../assets/images/team-pfp/roche-thatar.png";
+// import portisAramsosImg from "../assets/images/team-pfp/portis-aramsos.png"; // hidden — see commented block below
+// import rocheThatarImg from "../assets/images/team-pfp/roche-thatar.png";   // hidden — see commented block below
 import serebralImg from "../assets/images/team-pfp/serebral.png";
 import leoImg from "../assets/images/team-pfp/leo.png";
 import lainaholicImg from "../assets/images/team-pfp/lainaholic.png";
@@ -249,52 +249,53 @@ export const teamData = [
       "Other Tools": ["Git", "GitHub", "Kali", "Docker", "Linux"],
     },
   },
+  // portis aramsos & roche thatar — temporarily hidden; restore by uncommenting both blocks below.
+  // {
+  //   key: 3,
+  //   id: "portis-aramsos",
+  //   title: "portis aramsos",
+  //   role: "Co-Founder & CMO",
+  //   img: portisAramsosImg,
+  //   bio: "CMO leading Wiener Labs' brand, growth, and global communication strategy across Web3 and institutional markets. Owns the narrative, from positioning and category framing to launch playbooks and demand pipelines.",
+  //   expertise: [
+  //     "Marketing Strategy",
+  //     "Brand Positioning & Narrative",
+  //     "Growth & Demand Generation",
+  //     "Web3 & Institutional Communications",
+  //     "Launch Playbooks",
+  //   ],
+  //   achievements: [],
+  //   education: "",
+  //   location: "Dubai, UAE",
+  //   languages: ["English", "French"],
+  //   projects: [],
+  // },
+  // {
+  //   key: 4,
+  //   id: "roche-thatar",
+  //   title: "roche thatar",
+  //   role: "Co-Founder & COO",
+  //   img: rocheThatarImg,
+  //   bio: "Senior communications operator with a long career inside several of the largest U.S. agency networks before turning principal across the Middle East. Today sits at the head of one of the region's most consequential PR houses, an arrangement Wiener Labs keeps off the record by design. As COO, channels that operator's instinct into the firm's day-to-day cadence, delivery engine, and partnership pipeline.",
+  //   expertise: [
+  //     "Operations & Program Management",
+  //     "Strategic Communications",
+  //     "Partnerships & Stakeholder Management",
+  //     "Cross-Border Execution",
+  //     "Brand & PR Strategy",
+  //   ],
+  //   achievements: [
+  //     "Operates one of the Middle East's leading PR houses (held privately)",
+  //     "Senior PR mandates across major U.S. agency networks",
+  //     "Cross-market communications playbooks for global brands",
+  //   ],
+  //   education: "",
+  //   location: "Dubai, UAE",
+  //   languages: ["English"],
+  //   projects: [],
+  // },
   {
     key: 3,
-    id: "portis-aramsos",
-    title: "portis aramsos",
-    role: "Co-Founder & CMO",
-    img: portisAramsosImg,
-    bio: "CMO leading Wiener Labs' brand, growth, and global communication strategy across Web3 and institutional markets. Owns the narrative, from positioning and category framing to launch playbooks and demand pipelines.",
-    expertise: [
-      "Marketing Strategy",
-      "Brand Positioning & Narrative",
-      "Growth & Demand Generation",
-      "Web3 & Institutional Communications",
-      "Launch Playbooks",
-    ],
-    achievements: [],
-    education: "",
-    location: "Dubai, UAE",
-    languages: ["English", "French"],
-    projects: [],
-  },
-  {
-    key: 4,
-    id: "roche-thatar",
-    title: "roche thatar",
-    role: "Co-Founder & COO",
-    img: rocheThatarImg,
-    bio: "Senior communications operator with a long career inside several of the largest U.S. agency networks before turning principal across the Middle East. Today sits at the head of one of the region's most consequential PR houses, an arrangement Wiener Labs keeps off the record by design. As COO, channels that operator's instinct into the firm's day-to-day cadence, delivery engine, and partnership pipeline.",
-    expertise: [
-      "Operations & Program Management",
-      "Strategic Communications",
-      "Partnerships & Stakeholder Management",
-      "Cross-Border Execution",
-      "Brand & PR Strategy",
-    ],
-    achievements: [
-      "Operates one of the Middle East's leading PR houses (held privately)",
-      "Senior PR mandates across major U.S. agency networks",
-      "Cross-market communications playbooks for global brands",
-    ],
-    education: "",
-    location: "Dubai, UAE",
-    languages: ["English"],
-    projects: [],
-  },
-  {
-    key: 5,
     id: "antigaporia",
     title: "antigaporia",
     role: "AI Lead",
@@ -394,7 +395,7 @@ export const teamData = [
     },
   },
   {
-    key: 6,
+    key: 4,
     id: "0xpaj",
     title: "0xpaj",
     role: "Business Development",
@@ -431,7 +432,7 @@ export const teamData = [
     ],
   },
   {
-    key: 7,
+    key: 5,
     id: "thatbird",
     title: "thatbird",
     role: "Low-Level Systems & Android Engineer",
@@ -492,7 +493,7 @@ export const teamData = [
     },
   },
   {
-    key: 8,
+    key: 6,
     id: "dilemma",
     title: "dilemma",
     role: "Senior Backend Engineer",
@@ -525,7 +526,7 @@ export const teamData = [
     },
   },
   {
-    key: 9,
+    key: 7,
     id: "uchinagaeri",
     title: "uchinagaeri",
     role: "Advisor",
@@ -555,7 +556,7 @@ export const teamData = [
     },
   },
   {
-    key: 10,
+    key: 8,
     id: "serebral",
     title: "serebral",
     role: "Senior Machine Learning Engineer",
@@ -582,7 +583,7 @@ export const teamData = [
     },
   },
   {
-    key: 11,
+    key: 9,
     id: "nightowl",
     title: "nightowl",
     role: "Market Maker",
@@ -604,7 +605,7 @@ export const teamData = [
     },
   },
   {
-    key: 12,
+    key: 10,
     id: "leo",
     title: "leo",
     role: "Smart Contract Security Engineer",
@@ -636,7 +637,7 @@ export const teamData = [
     },
   },
   {
-    key: 13,
+    key: 11,
     id: "lainaholic",
     title: "lainaholic",
     role: "Agentic Developer",
@@ -662,7 +663,7 @@ export const teamData = [
     },
   },
   {
-    key: 14,
+    key: 12,
     id: "isaac",
     title: "isaac",
     role: "Bot Systems & Social Media Operator",
