@@ -11,6 +11,19 @@ import seelImg from "../assets/images/projects/seel.png";
 import aipagentsImg from "../assets/images/projects/aipagents.png";
 
 // Project-specific images
+import cortexImg from "../assets/images/projects/cortex.png";
+import probityImg from "../assets/images/projects/probity.png";
+import rorschachImg from "../assets/images/projects/rorschach.png";
+import condorcetImg from "../assets/images/projects/condorcet.png";
+import magnesiumImg from "../assets/images/projects/magnesium.png";
+import prowlImg from "../assets/images/projects/prowl.png";
+import mirageImg from "../assets/images/projects/mirage.png";
+import keymintImg from "../assets/images/projects/keymint.png";
+import xyraImg from "../assets/images/projects/xyra.png";
+import xqtcImg from "../assets/images/projects/xqtc.png";
+import oppolinkImg from "../assets/images/projects/oppolink.png";
+import forensicImg from "../assets/images/projects/forensic.png";
+
 import zkLokomotiveImg from "../assets/images/zkλ (zk-lokomotive).png";
 import paralyxImg from "../assets/images/Paralyx.png";
 import definiteImg from "../assets/images/Definite.png";
@@ -1043,7 +1056,8 @@ export const projectsData = [
     subtitle: "Nine Minds. One Trade. Your Keys.",
     description:
       "Autonomous AI trading platform on Solana where nine specialized agents deliberate and reach consensus on every trade. Non-custodial by design: execution runs through delegated wallets, so users keep their keys. Live in production with real money flow.",
-    image: cap1,
+    image: cortexImg,
+    hasCustomImage: true,
     category: "AI Agents",
     status: "Launched",
     priority: "S",
@@ -1059,7 +1073,8 @@ export const projectsData = [
     subtitle: "The Compliance Verdict on Every Solana Token",
     description:
       "Halal compliance screening for the Solana ecosystem: a deterministic rules engine renders a verdict on every Solana token, exposed through a versioned public API with signed webhooks and an on-chain attestation layer.",
-    image: cap2,
+    image: probityImg,
+    hasCustomImage: true,
     category: "Security",
     status: "Launched",
     priority: "S",
@@ -1111,7 +1126,8 @@ export const projectsData = [
     subtitle: "Adaptive OSINT Platform",
     description:
       "OSINT platform with adaptive scraping for the Turkish market, built around a three-tier fetcher hierarchy (HTTP / Dynamic / Stealthy) with fingerprint-based selector drift detection.",
-    image: cap2,
+    image: rorschachImg,
+    hasCustomImage: true,
     category: "Security",
     status: "Launched",
     priority: "A",
@@ -1153,7 +1169,8 @@ export const projectsData = [
     subtitle: "Trustless Distributed Training for Frontier AI",
     description:
       "Byzantine-robust distributed training protocol simulation: bonded verification with break-even bond sizing, gradient clipping and excision defenses, and an economy sweep showing security becomes self-funding under attack.",
-    image: cap1,
+    image: condorcetImg,
+    hasCustomImage: true,
     category: "Infrastructure",
     status: "Launched",
     priority: "A",
@@ -1166,7 +1183,8 @@ export const projectsData = [
     subtitle: "Multi-Agent Orchestration Harness",
     description:
       "Self-hosted multi-agent orchestration harness that makes one remote, closed model behave like a long-running, self-correcting multi-agent system through scaffolding, not model changes.",
-    image: cap2,
+    image: magnesiumImg,
+    hasCustomImage: true,
     category: "Tools",
     status: "Launched",
     priority: "A",
@@ -1182,7 +1200,8 @@ export const projectsData = [
     subtitle: "AI Auto Hustle Agent",
     description:
       "Autonomous AI agent that hunts, evaluates, and executes online income opportunities on behalf of the user. Web app plus a Kotlin Multiplatform mobile client and a Python opportunity-hunting fleet.",
-    image: cap1,
+    image: prowlImg,
+    hasCustomImage: true,
     category: "AI Agents",
     status: "Launched",
     priority: "A",
@@ -1195,7 +1214,8 @@ export const projectsData = [
     subtitle: "AI Content Production Studio",
     description:
       "AI-powered content production studio for a single creator publishing short-form videos about Dubai: live news, hidden gems, and untold stories, with multi-source RSS ingestion and AI-assisted drafting.",
-    image: cap2,
+    image: mirageImg,
+    hasCustomImage: true,
     category: "AI Agents",
     status: "Launched",
     priority: "B",
@@ -1254,7 +1274,8 @@ export const projectsData = [
     subtitle: "Monetize Any API with x402",
     description:
       "An x402 reverse proxy that monetizes any API with Solana USDC micropayments.",
-    image: cap2,
+    image: keymintImg,
+    hasCustomImage: true,
     category: "DeFi",
     status: "Launched",
     priority: "B",
@@ -1271,7 +1292,8 @@ export const projectsData = [
     subtitle: "The Agentic Code Editor",
     description:
       "The agentic code editor where every change is cross-examined by a rival AI before you see it. Flat-rate, local-first, and yours.",
-    image: cap1,
+    image: xyraImg,
+    hasCustomImage: true,
     category: "Tools",
     status: "Launched",
     priority: "A",
@@ -1320,7 +1342,8 @@ export const projectsData = [
     subtitle: "X Quote Tweet Collector",
     description:
       "X quote tweet collector with oEmbed rendering and a brutalist showcase UI, running scheduled collection sweeps.",
-    image: cap2,
+    image: xqtcImg,
+    hasCustomImage: true,
     category: "Tools",
     status: "Launched",
     priority: "B",
@@ -1374,7 +1397,8 @@ export const projectsData = [
     subtitle: "BLE-Native Full-Duplex Voice Protocol",
     description:
       "BLE-native full-duplex voice protocol for Oppo devices: a Kotlin application over a Rust DSP core bridged with UniFFI.",
-    image: cap2,
+    image: oppolinkImg,
+    hasCustomImage: true,
     category: "Infrastructure",
     status: "Launched",
     priority: "B",
@@ -1387,7 +1411,8 @@ export const projectsData = [
     subtitle: "Automated OSINT Forensics",
     description:
       "Open-source digital forensic tool that automates OSINT data collection and analysis. Submit one or more URLs and get a structured forensic report powered by 9 parallel OSINT modules and LLM analysis.",
-    image: cap1,
+    image: forensicImg,
+    hasCustomImage: true,
     category: "Security",
     status: "Launched",
     priority: "B",
