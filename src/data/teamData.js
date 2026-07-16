@@ -11,6 +11,7 @@ import serebralImg from "../assets/images/team-pfp/serebral.png";
 import leoImg from "../assets/images/team-pfp/leo.png";
 import lainaholicImg from "../assets/images/team-pfp/lainaholic.png";
 import isaacImg from "../assets/images/team-pfp/isaac.png";
+import mekImg from "../assets/images/team-pfp/mek.png";
 
 export const teamData = [
   {
@@ -687,5 +688,25 @@ export const teamData = [
     technicalSkills: {
       Languages: ["TypeScript", "JavaScript", "Python", "Go", "Ruby", "Bash"],
     },
+  },
+  {
+    key: 13,
+    id: "mek",
+    title: "mek",
+    role: "Business Development",
+    img: mekImg,
+    bio: "Business development for Wiener Labs' RWA and DeFi product line: partner pipeline, deal flow, and go-to-market motion across European markets, with a focus on the Benelux corridor.",
+    expertise: [
+      "Business Development",
+      "Partnerships",
+      "Deal Flow & Pipeline",
+      "Go-to-Market Strategy",
+      "Client Relations",
+    ],
+    achievements: [],
+    education: "",
+    location: "Amsterdam, Netherlands",
+    languages: ["Dutch", "English"],
+    projects: [],
   },
 ];
