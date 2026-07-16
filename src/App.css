@@ -74,6 +74,12 @@ body[theme="salmon"] .section {
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'SansitaBold';
+    src: url('./assets/fonts/font3.ttf');
+    font-display: swap;
+}
+
 body {
     font-family: 'Funnel', sans-serif;
 }

@@ -1,7 +1,16 @@
 import { Link } from 'react-router-dom';
 import styles from './Style.module.css';
-import { LuArrowUpRight } from "react-icons/lu";
+import { LuArrowUpRight, LuBookOpen, LuTrophy } from "react-icons/lu";
+import { FaXTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import Button from  '../Button'
+
+const SOCIAL_LINKS = [
+  { name: "X", href: "https://x.com/wienerlabs", Icon: FaXTwitter },
+  { name: "GitHub", href: "https://github.com/wienerlabs", Icon: FaGithub },
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/wiener-labs", Icon: FaLinkedinIn },
+  { name: "Paragraph", href: "https://paragraph.com/@wienerlabs", Icon: LuBookOpen },
+  { name: "DoraHacks", href: "https://dorahacks.io/org/wienerlabs", Icon: LuTrophy },
+];
 
 function Footer() {
   return (
@@ -129,6 +138,24 @@ function Footer() {
                 </div>
               )
             })}
+          </div>
+        </div>
+
+        <div className="mt-10 sm:mt-16 pt-8 border-t border-white/15 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <span className="font-[Funnel] text-white/60 text-sm">Wiener Labs</span>
+          <div className="flex flex-wrap items-center gap-x-7 gap-y-4">
+            {SOCIAL_LINKS.map(({ name, href, Icon }) => (
+              <a
+                key={name}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white hover:opacity-60 transition-opacity font-[Funnel] text-sm"
+              >
+                <Icon className="text-base" />
+                <span>{name}</span>
+              </a>
+            ))}
           </div>
         </div>
       </div>

@@ -1015,9 +1015,9 @@ export const projectsData = [
   {
     id: 107,
     title: "Cortex",
-    subtitle: "Nine Minds. One Trade. Your Keys.",
+    subtitle: "Autonomous DeFi Agent on Solana",
     description:
-      "Autonomous AI trading platform on Solana where nine specialized agents deliberate and reach consensus on every trade. Non-custodial by design: execution runs through delegated wallets, so users keep their keys. Live in production with real money flow.",
+      "Autonomous DeFi agent on Solana. Trades spot, captures liquidations. 24/7, no human required. Your portfolio, optimized by AI. Made by Wiener Labs.",
     image: cortexImg,
     hasCustomImage: true,
     category: "AI Agents",
@@ -1026,7 +1026,12 @@ export const projectsData = [
     progress: 100,
     tech: ["Python", "TypeScript", "Solana", "Claude API", "Privy"],
     links: {
-      website: "https://cortexagent.app/",
+      website: "https://cortex-agent.xyz/",
+      twitter: "https://x.com/cortexagentsc",
+      "beta app": "https://cortexagent.app/",
+      waitlist: "https://waitlist.cortex-agent.xyz/",
+      "fan page": "https://www.cortexai.trade/",
+      whitepaper: "https://cortex-agent.xyz/Docs#a-lams-var",
     },
   },
   {

@@ -38,7 +38,7 @@ function Row({ translateClass, direction }) {
                     className='elem flex items-center gap-4 sm:gap-6 lg:gap-8'
                 >
                     <h1
-                        className='font-[Funnel] font-bold text-3xl sm:text-5xl lg:text-7xl
+                        className='font-[SansitaBold] text-3xl sm:text-5xl lg:text-7xl
                         leading-tight'
                     >
                         {item.text}
