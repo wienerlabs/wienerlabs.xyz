@@ -30,10 +30,6 @@ function ProjectDetailPage() {
             { y: 30, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.6, stagger: 0.1, delay: 0.3 }
         );
-
-        return () => {
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        };
     }, [id]);
 
     if (!project) {

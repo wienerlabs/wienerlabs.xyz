@@ -15,9 +15,13 @@ import Footer from './components/Footer/Index';
 
 function App() {
   useEffect(() => {
-    const list = document.querySelectorAll('.section')
+    window.scrollTo(0, 0);
+    document.body.setAttribute("theme", "black");
+
+    const themeTriggers = [];
+    const list = document.querySelectorAll('.section[data-color]')
     list.forEach(function(e) {
-      ScrollTrigger.create({
+      themeTriggers.push(ScrollTrigger.create({
         trigger: e,
         start: "top 90%",
         end: "bottom 90%",
@@ -27,11 +31,14 @@ function App() {
         onEnterBack: function() {
           document.body.setAttribute("theme", e.dataset.color);
         }
-      })
+      }))
     })
 
+    const refreshTimer = setTimeout(() => ScrollTrigger.refresh(), 100);
+
     return () => {
-      ScrollTrigger.getAll().forEach(t => t.kill());
+      clearTimeout(refreshTimer);
+      themeTriggers.forEach(t => t.kill());
     };
   }, []);
 

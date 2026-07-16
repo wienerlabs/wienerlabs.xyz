@@ -12,6 +12,7 @@ import leoImg from "../assets/images/team-pfp/leo.png";
 import lainaholicImg from "../assets/images/team-pfp/lainaholic.png";
 import isaacImg from "../assets/images/team-pfp/isaac.png";
 import mekImg from "../assets/images/team-pfp/mek.png";
+import erolanaImg from "../assets/images/team-pfp/er0lana.png";
 
 export const teamData = [
   {
@@ -708,5 +709,22 @@ export const teamData = [
     location: "Amsterdam, Netherlands",
     languages: ["Dutch", "English"],
     projects: [],
+  },
+  {
+    key: 14,
+    id: "er0lana",
+    title: "er0lana",
+    role: "Team Member",
+    img: erolanaImg,
+    bio: "Part of the Wiener Labs team, focused on Etornie: trademark, patent, and design management on one platform, with instant IP answers through EtornieGPT.",
+    expertise: [],
+    achievements: [],
+    education: "",
+    location: "Switzerland",
+    languages: [],
+    projects: [],
+    links: {
+      twitter: "https://x.com/er0lana",
+    },
   },
 ];

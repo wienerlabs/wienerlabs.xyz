@@ -80,10 +80,6 @@ function ProjectsPage() {
             { y: 40, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.55, stagger: { amount: 0.6 }, delay: 0.25, ease: "power3.out" }
         );
-
-        return () => {
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        };
     }, []);
 
     useEffect(() => {
