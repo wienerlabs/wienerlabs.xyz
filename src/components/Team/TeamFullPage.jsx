@@ -24,8 +24,8 @@ function TeamFullPage({ onClose }) {
                 <div className="modal-content bg-white w-full max-w-7xl max-h-[90vh] overflow-y-auto rounded-lg relative">
                     <button onClick={handleClose} className="sticky top-4 right-4 float-right z-10 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-colors duration-300 font-bold text-2xl">×</button>
                     <div className="px-8 pt-16 pb-8 text-center">
-                        <h1 className="font-[SansitaBold] text-5xl sm:text-7xl mb-4">Our Team</h1>
-                        <p className="font-[Sansita] text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto">Meet the talented individuals driving innovation at Wiener Labs. Our team of 13 experts brings together deep expertise in blockchain, AI, and financial technology.</p>
+                        <h1 className="font-[Funnel] font-bold text-5xl sm:text-7xl mb-4">Our Team</h1>
+                        <p className="font-[Funnel] text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto">Meet the talented individuals driving innovation at Wiener Labs. Our team of 13 experts brings together deep expertise in blockchain, AI, and financial technology.</p>
                     </div>
                     <div className="px-8 pb-16">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -40,7 +40,7 @@ function TeamFullPage({ onClose }) {
                                             <img src={member.img} alt={member.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                                         ) : (
                                             <div className="w-full h-full bg-gradient-to-br from-white to-[#d4d4d4] flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                                                <span className="text-5xl font-[SansitaBold] text-[#3d3a2f]">
+                                                <span className="text-5xl font-[Funnel] font-bold text-[#3d3a2f]">
                                                     {member.title.split(' ').map(n => n[0]).join('').slice(0, 2)}
                                                 </span>
                                             </div>
@@ -48,12 +48,12 @@ function TeamFullPage({ onClose }) {
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                     </div>
                                     <div className="p-6">
-                                        <h3 className="font-[SansitaBold] text-2xl mb-2">{member.title}</h3>
-                                        <p className="font-[Sansita] text-lg text-white bg-black px-3 py-1 rounded-full inline-block mb-4">{member.role}</p>
-                                        <p className="font-[Sansita] text-gray-700 text-sm mb-4 leading-relaxed">{member.bio}</p>
+                                        <h3 className="font-[Funnel] font-bold text-2xl mb-2">{member.title}</h3>
+                                        <p className="font-[Funnel] text-lg text-white bg-black px-3 py-1 rounded-full inline-block mb-4">{member.role}</p>
+                                        <p className="font-[Funnel] text-gray-700 text-sm mb-4 leading-relaxed">{member.bio}</p>
                                         <div className="flex flex-wrap gap-2">
                                             {member.expertise.slice(0, 3).map((skill, index) => (
-                                                <span key={index} className="font-[Sansita] text-xs bg-white text-black px-3 py-1 rounded-full border border-black">{skill}</span>
+                                                <span key={index} className="font-[Funnel] text-xs bg-white text-black px-3 py-1 rounded-full border border-black">{skill}</span>
                                             ))}
                                         </div>
                                     </div>
@@ -63,10 +63,10 @@ function TeamFullPage({ onClose }) {
                     </div>
                     <div className="bg-white px-8 py-12">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                            <div><h3 className="font-[SansitaBold] text-4xl sm:text-5xl mb-2">20+</h3><p className="font-[Sansita] text-lg text-gray-700">Team Members</p></div>
-                            <div><h3 className="font-[SansitaBold] text-4xl sm:text-5xl mb-2">4</h3><p className="font-[Sansita] text-lg text-gray-700">Co-Founders</p></div>
-                            <div><h3 className="font-[SansitaBold] text-4xl sm:text-5xl mb-2">8</h3><p className="font-[Sansita] text-lg text-gray-700">Years Exp.</p></div>
-                            <div><h3 className="font-[SansitaBold] text-4xl sm:text-5xl mb-2">87</h3><p className="font-[Sansita] text-lg text-gray-700">Projects</p></div>
+                            <div><h3 className="font-[Funnel] font-bold text-4xl sm:text-5xl mb-2">20+</h3><p className="font-[Funnel] text-lg text-gray-700">Team Members</p></div>
+                            <div><h3 className="font-[Funnel] font-bold text-4xl sm:text-5xl mb-2">4</h3><p className="font-[Funnel] text-lg text-gray-700">Co-Founders</p></div>
+                            <div><h3 className="font-[Funnel] font-bold text-4xl sm:text-5xl mb-2">8</h3><p className="font-[Funnel] text-lg text-gray-700">Years Exp.</p></div>
+                            <div><h3 className="font-[Funnel] font-bold text-4xl sm:text-5xl mb-2">87</h3><p className="font-[Funnel] text-lg text-gray-700">Projects</p></div>
                         </div>
                     </div>
                 </div>

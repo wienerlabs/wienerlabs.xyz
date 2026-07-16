@@ -42,16 +42,16 @@ function Ambassadors() {
         <div className="mb-16 sm:mb-24">
           <div className="flex items-center gap-3 mb-4 sm:mb-6">
             <div className="w-12 sm:w-16 h-[2px] bg-black"></div>
-            <span className="font-[Sansita] text-sm sm:text-base font-semibold tracking-widest uppercase">
+            <span className="font-[Funnel] text-sm sm:text-base font-semibold tracking-widest uppercase">
               Ambassadors
             </span>
           </div>
-          <h2 className="font-[SansitaReg] text-4xl sm:text-5xl lg:text-7xl leading-tight mb-6 sm:mb-8">
+          <h2 className="font-[Funnel] text-4xl sm:text-5xl lg:text-7xl leading-tight mb-6 sm:mb-8">
             On-the-ground
             <br />
             voices
           </h2>
-          <p className="font-[Sansita] text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed font-medium">
+          <p className="font-[Funnel] text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed font-medium">
             {ambassadorsIntro}
           </p>
         </div>
@@ -85,19 +85,19 @@ function Ambassadors() {
                       loading="lazy"
                     />
                   ) : (
-                    <span className="font-[SansitaBold] text-2xl sm:text-3xl text-[#3d3a2f]">
+                    <span className="font-[Funnel] font-bold text-2xl sm:text-3xl text-[#3d3a2f]">
                       {initials}
                     </span>
                   )}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="inline-block bg-black text-white px-3 py-1 rounded-full text-[10px] sm:text-xs font-[Sansita] font-semibold tracking-widest uppercase mb-3">
+                  <span className="inline-block bg-black text-white px-3 py-1 rounded-full text-[10px] sm:text-xs font-[Funnel] font-semibold tracking-widest uppercase mb-3">
                     {amb.role}
                   </span>
-                  <h3 className="font-[SansitaBold] text-2xl sm:text-3xl mb-1 leading-tight">
+                  <h3 className="font-[Funnel] font-bold text-2xl sm:text-3xl mb-1 leading-tight">
                     {amb.handle}
                   </h3>
-                  <p className="font-[Sansita] text-sm sm:text-base leading-relaxed">
+                  <p className="font-[Funnel] text-sm sm:text-base leading-relaxed">
                     {amb.bio}
                   </p>
                 </div>

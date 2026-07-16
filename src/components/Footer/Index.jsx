@@ -8,12 +8,12 @@ function Footer() {
     <div id="contact" className="section w-full mt-16 sm:mt-24">
       <div className="topfoot bg-white pt-10 sm:pt-16 pb-10 sm:pb-16 flex flex-col md:flex-row items-start md:items-center justify-between px-4 sm:px-8">
         <div className="left w-full md:w-1/2 mb-6 md:mb-0">
-          <div className="first font-[SansitaReg] text-2xl sm:text-3xl lg:text-5xl leading-tight mb-4 sm:mb-6">
+          <div className="first font-[Funnel] text-2xl sm:text-3xl lg:text-5xl leading-tight mb-4 sm:mb-6">
             <h1>Discover Wiener Labs.</h1>
           </div>
           <Link to="/projects" className='inline-block px-4 py-3 bg-[--black] text-white'>
             <div className={`${styles.masker} flex items-center gap-2 overflow-hidden relative cursor-pointer`}>
-              <span className={`${styles.spanMask} font-[Sansita] text-sm sm:text-base capitalize tracking-normal font-semibold`}>
+              <span className={`${styles.spanMask} font-[Funnel] text-sm sm:text-base capitalize tracking-normal font-semibold`}>
                 VIEW PROJECTS
               </span>
               <LuArrowUpRight className={`${styles.iconMask} text-lg sm:text-xl text-[#f5f19c]`} />
@@ -23,7 +23,7 @@ function Footer() {
 
         <div className="right w-full md:w-1/2 flex items-start md:items-center justify-between">
           <div className="w-full md:w-2/3">
-            <h3 className="text-sm sm:text-base lg:text-lg font-[Sansita] font-medium leading-relaxed">
+            <h3 className="text-sm sm:text-base lg:text-lg font-[Funnel] font-medium leading-relaxed">
               Wiener Labs is a technology company
               operating under a software laboratory model
               that enables the integration of Real World Assets (RWAs) into blockchain infrastructure.
@@ -71,7 +71,7 @@ function Footer() {
                     }
                   }}
                 >
-                  <h3 className='font-[SansitaReg] text-[2.5vh] text-white font-semibold'>
+                  <h3 className='font-[Funnel] text-[2.5vh] text-white font-semibold'>
                     {item.name}
                   </h3>
                 </div>
@@ -79,7 +79,7 @@ function Footer() {
             })}
           </div>
           <div className='w-full sm:w-auto'>
-            <h1 className='text-white pb-4 sm:pb-10 font-[SansitaReg] text-base sm:text-lg font-semibold'>Join our mailing list for the latest updates.</h1>
+            <h1 className='text-white pb-4 sm:pb-10 font-[Funnel] text-base sm:text-lg font-semibold'>Join our mailing list for the latest updates.</h1>
             <div className='flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6'>
               <input
                 type="text"
@@ -104,7 +104,7 @@ function Footer() {
                     to={item.to}
                     className='block pb-4 cursor-pointer hover:opacity-70 transition-opacity'
                   >
-                    <h3 className='font-[SansitaReg] text-[2.5vh] text-white font-semibold'>
+                    <h3 className='font-[Funnel] text-[2.5vh] text-white font-semibold'>
                       {item.name}
                     </h3>
                   </Link>
@@ -123,7 +123,7 @@ function Footer() {
                     }
                   }}
                 >
-                  <h3 className='font-[SansitaReg] text-[2.5vh] text-white font-semibold'>
+                  <h3 className='font-[Funnel] text-[2.5vh] text-white font-semibold'>
                     {item.name}
                   </h3>
                 </div>

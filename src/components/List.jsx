@@ -73,9 +73,9 @@ function List({ onMemberClick }) {
               >
                 <div className="left flex items-center gap-4 sm:gap-8 lg:gap-14">
                   <h3 className="hidden sm:inline-block opacity-25 text-2xl lg:text-5xl tabular-nums">{String(item.key).padStart(2, '0')}</h3>
-                  <h1 className="text-black text-xl sm:text-2xl lg:text-4xl font-[SansitaBold]">{item.title}</h1>
+                  <h1 className="text-black text-xl sm:text-2xl lg:text-4xl font-[Funnel] font-bold">{item.title}</h1>
                 </div>
-                <h3 className="font-[Sansita] text-sm sm:text-base lg:text-lg font-medium tracking-tight text-gray-600 sm:text-black">
+                <h3 className="font-[Funnel] text-sm sm:text-base lg:text-lg font-medium tracking-tight text-gray-600 sm:text-black">
                   {item.role}
                 </h3>
               </div>
@@ -89,7 +89,7 @@ function List({ onMemberClick }) {
                   <img src={item.img} className='w-full h-full object-cover' />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-white to-[#d4d4d4] flex items-center justify-center">
-                    <span className="text-xl sm:text-2xl lg:text-5xl font-[SansitaBold] text-[#3d3a2f]">
+                    <span className="text-xl sm:text-2xl lg:text-5xl font-[Funnel] font-bold text-[#3d3a2f]">
                       {item.title.split(' ').map(n => n[0]).join('').slice(0, 2)}
                     </span>
                   </div>

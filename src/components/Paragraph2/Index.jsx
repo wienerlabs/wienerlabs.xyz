@@ -35,7 +35,7 @@ function Para2() {
             <div className='hidden w-[40%] sm:flex items-center justify-center mb-12'>
                 <hr className='bg-zinc-400 w-[20%] h-[.3vh]' />
             </div>
-            <h3 className='textpara2 w-full sm:w-[40%] text-[#3d3a2f] font-[Sansita] text-base sm:text-lg lg:text-xl font-medium text-center tracking-wide leading-relaxed sm:leading-[5vh] mb-10'>Wiener Labs is the kind of builder profile we want active in the Solana ecosystem. Disciplined engineering, real on-chain product, and a team that pulls regional talent into global rails. They show up, they ship, and they bring others with them.</h3>
+            <h3 className='textpara2 w-full sm:w-[40%] text-[#3d3a2f] font-[Funnel] text-base sm:text-lg lg:text-xl font-medium text-center tracking-wide leading-relaxed sm:leading-[5vh] mb-10'>Wiener Labs is the kind of builder profile we want active in the Solana ecosystem. Disciplined engineering, real on-chain product, and a team that pulls regional talent into global rails. They show up, they ship, and they bring others with them.</h3>
             <div className="pers w-full sm:w-[40%] flex flex-col items-center justify-center gap-2">
                 <div className="image w-20 h-20 sm:w-24 sm:h-24 overflow-hidden rounded-full bg-white flex items-center justify-center">
                     <img src={superteamTrImg} alt="Superteam TR" className="w-full h-full object-contain scale-125" />

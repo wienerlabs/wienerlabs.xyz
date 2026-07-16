@@ -386,18 +386,18 @@ function MemberProfile({ member, onClose }) {
                                         <img src={member.img} alt={member.title} className="w-full h-full object-cover object-center" />
                                     ) : (
                                         <div className="w-full h-full bg-gradient-to-br from-white to-[#d4d4d4] flex items-center justify-center">
-                                            <span className="text-6xl font-[SansitaBold] text-[#3d3a2f]">
+                                            <span className="text-6xl font-[Funnel] font-bold text-[#3d3a2f]">
                                                 {member.title.split(' ').map(n => n[0]).join('').slice(0, 2)}
                                             </span>
                                         </div>
                                     )}
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 </div>
-                                <h1 className="font-[SansitaBold] text-4xl sm:text-5xl mb-3">{member.title}</h1>
-                                <p className="font-[Sansita] text-xl sm:text-2xl text-white bg-black px-4 py-2 rounded-full inline-block mb-4">
+                                <h1 className="font-[Funnel] font-bold text-4xl sm:text-5xl mb-3">{member.title}</h1>
+                                <p className="font-[Funnel] text-xl sm:text-2xl text-white bg-black px-4 py-2 rounded-full inline-block mb-4">
                                     {member.role}
                                 </p>
-                                <div className="space-y-3 text-gray-700 font-[Sansita]">
+                                <div className="space-y-3 text-gray-700 font-[Funnel]">
                                     <p className="flex items-center gap-2">
                                         <span className="text-2xl">📍</span>
                                         <span>{member.location}</span>
@@ -416,26 +416,26 @@ function MemberProfile({ member, onClose }) {
 
                         <div className="lg:col-span-2 space-y-8">
                             <div className="profile-section">
-                                <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">About</h2>
-                                <p className="font-[Sansita] text-lg text-gray-700 leading-relaxed mb-6">{member.bio}</p>
+                                <h2 className="font-[Funnel] font-bold text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">About</h2>
+                                <p className="font-[Funnel] text-lg text-gray-700 leading-relaxed mb-6">{member.bio}</p>
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                                     {member.achievements.map((achievement, index) => (
                                         <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-lg border-2 border-black">
                                             <span className="text-2xl">🏆</span>
-                                            <p className="font-[Sansita] text-sm">{achievement}</p>
+                                            <p className="font-[Funnel] text-sm">{achievement}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
                             <div className="profile-section">
-                                <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">Expertise</h2>
+                                <h2 className="font-[Funnel] font-bold text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">Expertise</h2>
                                 <div className="flex flex-wrap gap-3">
                                     {member.expertise.map((skill, index) => (
                                         <span
                                             key={index}
-                                            className="font-[Sansita] text-sm bg-black text-white px-4 py-2 rounded-full border-2 border-black hover:bg-white hover:text-black transition-all duration-300 cursor-default"
+                                            className="font-[Funnel] text-sm bg-black text-white px-4 py-2 rounded-full border-2 border-black hover:bg-white hover:text-black transition-all duration-300 cursor-default"
                                         >
                                             {skill}
                                         </span>
@@ -445,7 +445,7 @@ function MemberProfile({ member, onClose }) {
 
                             {member.technicalSkills && Object.keys(member.technicalSkills).length > 0 && (
                                 <div className="profile-section">
-                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-6 border-b-4 border-black pb-2">Technical Skills</h2>
+                                    <h2 className="font-[Funnel] font-bold text-3xl sm:text-4xl mb-6 border-b-4 border-black pb-2">Technical Skills</h2>
                                     <div className="space-y-6">
                                         {Object.entries(member.technicalSkills).map(([category, items]) => {
                                             const accent = SKILL_CATEGORY_ACCENTS[category] ?? DEFAULT_ACCENT;
@@ -453,7 +453,7 @@ function MemberProfile({ member, onClose }) {
                                                 <div key={category}>
                                                     <div className="flex items-center gap-2 mb-3">
                                                         <span className={`w-2 h-2 rounded-full ${accent.dot}`}></span>
-                                                        <h3 className="font-[SansitaBold] text-xs uppercase tracking-[0.25em] text-black">{category}</h3>
+                                                        <h3 className="font-[Funnel] font-bold text-xs uppercase tracking-[0.25em] text-black">{category}</h3>
                                                         <span className="flex-1 h-px bg-black/15"></span>
                                                     </div>
                                                     <div className="flex flex-wrap gap-2.5">
@@ -477,7 +477,7 @@ function MemberProfile({ member, onClose }) {
                                                                             loading="lazy"
                                                                         />
                                                                     )}
-                                                                    <span className="font-[Sansita] text-xs sm:text-sm font-medium text-black whitespace-nowrap">
+                                                                    <span className="font-[Funnel] text-xs sm:text-sm font-medium text-black whitespace-nowrap">
                                                                         {item}
                                                                     </span>
                                                                 </div>
@@ -493,7 +493,7 @@ function MemberProfile({ member, onClose }) {
 
                             {!loading && githubAccounts.length > 0 && (
                                 <div className="profile-section">
-                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">Key Projects</h2>
+                                    <h2 className="font-[Funnel] font-bold text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">Key Projects</h2>
                                     <div className="space-y-4">
                                         {githubAccounts.map((account) =>
                                             account.repos.slice(0, 6).map((repo) => (
@@ -505,33 +505,33 @@ function MemberProfile({ member, onClose }) {
                                                     className="block border-2 border-black rounded-lg p-5 hover:shadow-xl transition-all duration-300 bg-white hover:bg-black/5"
                                                 >
                                                     <div className="flex items-start justify-between mb-2">
-                                                        <h3 className="font-[SansitaBold] text-xl flex-1">{repo.name}</h3>
+                                                        <h3 className="font-[Funnel] font-bold text-xl flex-1">{repo.name}</h3>
                                                         <div className="flex items-center gap-3 ml-4">
                                                             {repo.stargazers_count > 0 && (
-                                                                <span className="font-[Sansita] text-sm text-gray-600 flex items-center gap-1">
+                                                                <span className="font-[Funnel] text-sm text-gray-600 flex items-center gap-1">
                                                                     ⭐ {repo.stargazers_count}
                                                                 </span>
                                                             )}
                                                             {repo.forks_count > 0 && (
-                                                                <span className="font-[Sansita] text-sm text-gray-600 flex items-center gap-1">
+                                                                <span className="font-[Funnel] text-sm text-gray-600 flex items-center gap-1">
                                                                     🔱 {repo.forks_count}
                                                                 </span>
                                                             )}
                                                         </div>
                                                     </div>
                                                     {repo.description && (
-                                                        <p className="font-[Sansita] text-sm text-gray-700 mb-3">{repo.description}</p>
+                                                        <p className="font-[Funnel] text-sm text-gray-700 mb-3">{repo.description}</p>
                                                     )}
                                                     <div className="flex flex-wrap gap-2">
                                                         {repo.language && (
-                                                            <span className="font-[Sansita] text-xs bg-white text-black px-3 py-1 rounded-full border border-black">
+                                                            <span className="font-[Funnel] text-xs bg-white text-black px-3 py-1 rounded-full border border-black">
                                                                 {repo.language}
                                                             </span>
                                                         )}
                                                         {repo.topics && repo.topics.slice(0, 4).map((topic, topicIndex) => (
                                                             <span
                                                                 key={topicIndex}
-                                                                className="font-[Sansita] text-xs bg-white text-black px-3 py-1 rounded-full border border-black"
+                                                                className="font-[Funnel] text-xs bg-white text-black px-3 py-1 rounded-full border border-black"
                                                             >
                                                                 {topic}
                                                             </span>
@@ -546,7 +546,7 @@ function MemberProfile({ member, onClose }) {
 
                             {loading && (
                                 <div className="profile-section">
-                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">GitHub Activity</h2>
+                                    <h2 className="font-[Funnel] font-bold text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">GitHub Activity</h2>
                                     <div className="flex items-center justify-center py-12">
                                         <div className="animate-spin rounded-full h-16 w-16 border-4 border-black/10 border-t-black"></div>
                                     </div>
@@ -555,7 +555,7 @@ function MemberProfile({ member, onClose }) {
 
                             {!loading && githubAccounts.map((account, accountIndex) => (
                                 <div key={account.username} className="profile-section">
-                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2 flex items-center gap-3">
+                                    <h2 className="font-[Funnel] font-bold text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2 flex items-center gap-3">
                                         <span>GitHub Activity - @{account.username}</span>
                                         <a
                                             href={`https://github.com/${account.username}`}
@@ -569,26 +569,26 @@ function MemberProfile({ member, onClose }) {
 
                                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
                                         <div className="bg-white p-4 rounded-lg border-2 border-black text-center">
-                                            <p className="font-[SansitaBold] text-3xl">{account.data?.public_repos || 0}</p>
-                                            <p className="font-[Sansita] text-sm text-gray-700">Repositories</p>
+                                            <p className="font-[Funnel] font-bold text-3xl">{account.data?.public_repos || 0}</p>
+                                            <p className="font-[Funnel] text-sm text-gray-700">Repositories</p>
                                         </div>
                                         <div className="bg-white p-4 rounded-lg border-2 border-black text-center">
-                                            <p className="font-[SansitaBold] text-3xl">{account.data?.followers || 0}</p>
-                                            <p className="font-[Sansita] text-sm text-gray-700">Followers</p>
+                                            <p className="font-[Funnel] font-bold text-3xl">{account.data?.followers || 0}</p>
+                                            <p className="font-[Funnel] text-sm text-gray-700">Followers</p>
                                         </div>
                                         <div className="bg-white p-4 rounded-lg border-2 border-black text-center">
-                                            <p className="font-[SansitaBold] text-3xl">{account.data?.following || 0}</p>
-                                            <p className="font-[Sansita] text-sm text-gray-700">Following</p>
+                                            <p className="font-[Funnel] font-bold text-3xl">{account.data?.following || 0}</p>
+                                            <p className="font-[Funnel] text-sm text-gray-700">Following</p>
                                         </div>
                                         <div className="bg-white p-4 rounded-lg border-2 border-black text-center">
-                                            <p className="font-[SansitaBold] text-3xl">{account.data?.public_gists || 0}</p>
-                                            <p className="font-[Sansita] text-sm text-gray-700">Gists</p>
+                                            <p className="font-[Funnel] font-bold text-3xl">{account.data?.public_gists || 0}</p>
+                                            <p className="font-[Funnel] text-sm text-gray-700">Gists</p>
                                         </div>
                                     </div>
 
                                     {account.username && (
                                         <div className="mb-6">
-                                            <h3 className="font-[SansitaBold] text-2xl mb-4">Contribution Activity</h3>
+                                            <h3 className="font-[Funnel] font-bold text-2xl mb-4">Contribution Activity</h3>
                                             <div className="bg-white p-6 rounded-lg border-2 border-black overflow-x-auto">
                                                 <GitHubCalendar
                                                     username={account.username}
@@ -601,7 +601,7 @@ function MemberProfile({ member, onClose }) {
                                                         dark: ['#f0f0f0', '#d4d4d4', '#a3a3a3', '#525252', '#171717']
                                                     }}
                                                     style={{
-                                                        fontFamily: 'Sansita, sans-serif'
+                                                        fontFamily: 'Funnel, sans-serif'
                                                     }}
                                                 />
                                             </div>
@@ -610,7 +610,7 @@ function MemberProfile({ member, onClose }) {
 
                                     {account.repos && account.repos.length > 0 && (
                                         <div className="mb-6">
-                                            <h3 className="font-[SansitaBold] text-2xl mb-4">
+                                            <h3 className="font-[Funnel] font-bold text-2xl mb-4">
                                                 {accountIndex === 0 && member.featuredRepos ? 'Featured & Top Repositories' : 'Top Repositories'}
                                             </h3>
                                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -629,12 +629,12 @@ function MemberProfile({ member, onClose }) {
                                                             }`}
                                                         >
                                                             {isFeatured && (
-                                                                <div className="absolute -top-2 -right-2 bg-black text-white px-3 py-1 rounded-full text-xs font-[SansitaBold] shadow-lg">
+                                                                <div className="absolute -top-2 -right-2 bg-black text-white px-3 py-1 rounded-full text-xs font-[Funnel] font-bold shadow-lg">
                                                                     ⭐ FEATURED
                                                                 </div>
                                                             )}
-                                                            <h4 className="font-[SansitaBold] text-lg mb-2 truncate pr-16">{repo.name}</h4>
-                                                            <p className="font-[Sansita] text-sm text-gray-600 mb-3 line-clamp-2">
+                                                            <h4 className="font-[Funnel] font-bold text-lg mb-2 truncate pr-16">{repo.name}</h4>
+                                                            <p className="font-[Funnel] text-sm text-gray-600 mb-3 line-clamp-2">
                                                                 {repo.description || 'No description'}
                                                             </p>
                                                             <div className="flex items-center gap-4 text-sm">
@@ -644,7 +644,7 @@ function MemberProfile({ member, onClose }) {
                                                                         {repo.language}
                                                                     </span>
                                                                 )}
-                                                                <span className="flex items-center gap-1 font-[SansitaBold] text-black">
+                                                                <span className="flex items-center gap-1 font-[Funnel] font-bold text-black">
                                                                     ⭐ {repo.stargazers_count || 0}
                                                                 </span>
                                                                 <span className="flex items-center gap-1 text-gray-600">
@@ -660,7 +660,7 @@ function MemberProfile({ member, onClose }) {
 
                                     {account.activity && account.activity.length > 0 && (
                                         <div>
-                                            <h3 className="font-[SansitaBold] text-2xl mb-4">Recent Activity</h3>
+                                            <h3 className="font-[Funnel] font-bold text-2xl mb-4">Recent Activity</h3>
                                             <div className="space-y-3">
                                                 {account.activity.slice(0, 8).map((event, index) => (
                                                     <div
@@ -669,8 +669,8 @@ function MemberProfile({ member, onClose }) {
                                                     >
                                                         <span className="text-2xl">{getActivityIcon(event.type)}</span>
                                                         <div className="flex-1">
-                                                            <p className="font-[Sansita] text-sm">{getActivityText(event)}</p>
-                                                            <p className="font-[Sansita] text-xs text-gray-500 mt-1">
+                                                            <p className="font-[Funnel] text-sm">{getActivityText(event)}</p>
+                                                            <p className="font-[Funnel] text-xs text-gray-500 mt-1">
                                                                 {new Date(event.created_at).toLocaleDateString('en-US', {
                                                                     month: 'short',
                                                                     day: 'numeric',

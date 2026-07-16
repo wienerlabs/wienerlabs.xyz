@@ -37,7 +37,7 @@ function Para() {
             <div className='hidden w-[50%] sm:flex items-center justify-center mb-12'>
                 <hr className='bg-zinc-400 w-[20%] h-[.3vh]' />
             </div>
-            <h3 className='textpara w-full sm:w-[50%] text-[#3d3a2f] font-[Sansita] tracking-wide text-base sm:text-lg lg:text-xl font-medium text-center leading-relaxed sm:leading-[5vh] mb-10'>What Wiener Labs is building sits at the exact convergence institutional trade finance has been waiting for: programmable settlement, tokenized real-world assets, and a team disciplined enough to put it in front of regulated counterparties. That bench, that posture, is rare in this market. It is the rail I am advising them on.</h3>
+            <h3 className='textpara w-full sm:w-[50%] text-[#3d3a2f] font-[Funnel] tracking-wide text-base sm:text-lg lg:text-xl font-medium text-center leading-relaxed sm:leading-[5vh] mb-10'>What Wiener Labs is building sits at the exact convergence institutional trade finance has been waiting for: programmable settlement, tokenized real-world assets, and a team disciplined enough to put it in front of regulated counterparties. That bench, that posture, is rare in this market. It is the rail I am advising them on.</h3>
             <div className="pers w-full sm:w-[50%] flex flex-col items-center justify-center gap-2">
                 <div className="image w-20 h-20 sm:w-24 sm:h-24 overflow-hidden rounded-full">
                     <img src={muratImg} alt="Murat I. Türker" className="w-full h-full object-cover" />

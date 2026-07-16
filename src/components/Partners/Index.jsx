@@ -97,15 +97,15 @@ function Partners() {
         <div className="mb-16 sm:mb-24">
           <div className="flex items-center gap-3 mb-4 sm:mb-6">
             <div className="w-12 sm:w-16 h-[2px] bg-black"></div>
-            <span className="font-[Sansita] text-sm sm:text-base font-semibold tracking-widest uppercase">
+            <span className="font-[Funnel] text-sm sm:text-base font-semibold tracking-widest uppercase">
               Selected Experience
             </span>
           </div>
-          <h2 className="font-[SansitaReg] text-4xl sm:text-5xl lg:text-7xl leading-tight mb-6 sm:mb-8">
+          <h2 className="font-[Funnel] text-4xl sm:text-5xl lg:text-7xl leading-tight mb-6 sm:mb-8">
             Partners &<br />
             Collaborations
           </h2>
-          <p className="font-[Sansita] text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed font-medium">
+          <p className="font-[Funnel] text-base sm:text-lg lg:text-xl max-w-3xl leading-relaxed font-medium">
             Wiener Labs operates at the intersection of blockchain
             infrastructure and enterprise deployment, extending our technical
             delivery through a global communication network spanning Web3
@@ -122,7 +122,7 @@ function Partners() {
                 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
             >
               <div className="flex items-start justify-between gap-3 mb-5">
-                <span className="inline-block bg-black text-white px-3 py-1 rounded-full text-[10px] sm:text-xs font-[Sansita] font-semibold tracking-widest uppercase">
+                <span className="inline-block bg-black text-white px-3 py-1 rounded-full text-[10px] sm:text-xs font-[Funnel] font-semibold tracking-widest uppercase">
                   {partner.category}
                 </span>
                 {partner.logo && (
@@ -149,22 +149,22 @@ function Partners() {
                   </div>
                 )}
               </div>
-              <h3 className="font-[SansitaBold] text-2xl sm:text-3xl mb-2 leading-tight">
+              <h3 className="font-[Funnel] font-bold text-2xl sm:text-3xl mb-2 leading-tight">
                 {partner.name}
               </h3>
-              <p className="font-[Sansita] text-sm sm:text-base text-gray-600 italic mb-4">
+              <p className="font-[Funnel] text-sm sm:text-base text-gray-600 italic mb-4">
                 {partner.subtitle}
               </p>
-              <p className="font-[Sansita] text-sm sm:text-base leading-relaxed mb-5 flex-grow">
+              <p className="font-[Funnel] text-sm sm:text-base leading-relaxed mb-5 flex-grow">
                 {partner.description}
               </p>
               <ul className="space-y-2 pt-4 border-t border-black/10">
                 {partner.highlights.map((h, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-2 font-[Sansita] text-xs sm:text-sm"
+                    className="flex items-start gap-2 font-[Funnel] text-xs sm:text-sm"
                   >
-                    <span className="text-black mt-[2px] font-[SansitaBold]">-</span>
+                    <span className="text-black mt-[2px] font-[Funnel] font-bold">-</span>
                     <span>{h}</span>
                   </li>
                 ))}
@@ -177,7 +177,7 @@ function Partners() {
         <div className="capability-strip mb-20 sm:mb-32">
           <div className="flex items-center gap-3 mb-6 sm:mb-8">
             <div className="w-12 sm:w-16 h-[2px] bg-black"></div>
-            <span className="font-[Sansita] text-sm sm:text-base font-semibold tracking-widest uppercase">
+            <span className="font-[Funnel] text-sm sm:text-base font-semibold tracking-widest uppercase">
               Strategic Capability Areas
             </span>
           </div>
@@ -185,7 +185,7 @@ function Partners() {
             {capabilityAreas.map((area, i) => (
               <div
                 key={i}
-                className="capability-pill font-[SansitaBold] text-sm sm:text-lg lg:text-xl
+                className="capability-pill font-[Funnel] font-bold text-sm sm:text-lg lg:text-xl
                   bg-black text-white px-5 sm:px-7 py-3 sm:py-4 rounded-full
                   border-2 border-black"
               >
@@ -197,15 +197,15 @@ function Partners() {
 
         {/* Positioning Statement */}
         <div className="positioning-quote relative max-w-5xl mx-auto mb-20 sm:mb-32">
-          <div className="absolute -top-8 -left-4 sm:-top-12 sm:-left-8 font-[SansitaBold] text-8xl sm:text-[12rem] text-black/10 leading-none select-none pointer-events-none">
+          <div className="absolute -top-8 -left-4 sm:-top-12 sm:-left-8 font-[Funnel] font-bold text-8xl sm:text-[12rem] text-black/10 leading-none select-none pointer-events-none">
             &ldquo;
           </div>
-          <blockquote className="relative font-[SansitaReg] text-xl sm:text-3xl lg:text-4xl leading-relaxed text-center px-4 sm:px-12 py-8">
+          <blockquote className="relative font-[Funnel] text-xl sm:text-3xl lg:text-4xl leading-relaxed text-center px-4 sm:px-12 py-8">
             {positioningStatement}
           </blockquote>
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-10 h-[2px] bg-black"></div>
-            <span className="font-[Sansita] text-sm sm:text-base font-semibold tracking-widest uppercase">
+            <span className="font-[Funnel] text-sm sm:text-base font-semibold tracking-widest uppercase">
               Positioning
             </span>
             <div className="w-10 h-[2px] bg-black"></div>
@@ -216,7 +216,7 @@ function Partners() {
         <div className="why-matters">
           <div className="flex items-center gap-3 mb-8 sm:mb-10 justify-center">
             <div className="w-12 sm:w-16 h-[2px] bg-black"></div>
-            <span className="font-[Sansita] text-sm sm:text-base font-semibold tracking-widest uppercase">
+            <span className="font-[Funnel] text-sm sm:text-base font-semibold tracking-widest uppercase">
               Why This Matters
             </span>
             <div className="w-12 sm:w-16 h-[2px] bg-black"></div>
@@ -228,10 +228,10 @@ function Partners() {
                 className="why-card bg-white border-2 border-black rounded-2xl p-5 sm:p-6 text-center
                   hover:bg-black hover:text-white transition-colors duration-300 group cursor-default"
               >
-                <p className="font-[Sansita] text-[10px] sm:text-xs uppercase tracking-widest text-gray-500 group-hover:text-white/70 mb-2 transition-colors duration-300">
+                <p className="font-[Funnel] text-[10px] sm:text-xs uppercase tracking-widest text-gray-500 group-hover:text-white/70 mb-2 transition-colors duration-300">
                   {item.label}
                 </p>
-                <p className="font-[SansitaBold] text-base sm:text-xl lg:text-2xl leading-tight">
+                <p className="font-[Funnel] font-bold text-base sm:text-xl lg:text-2xl leading-tight">
                   {item.value}
                 </p>
               </div>

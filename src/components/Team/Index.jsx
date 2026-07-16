@@ -36,7 +36,7 @@ function Team() {
     <div
       id="team"
       data-color="white"
-      className="team section font-[SansitaReg] py-20"
+      className="team section font-[Funnel] py-20"
     >
       <div className="head1">
         <h1 className="text-5xl sm:text-6xl text-center tracking-tight">

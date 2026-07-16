@@ -40,20 +40,20 @@ gsap.registerPlugin(ScrollTrigger);
         lg:overflow-hidden mb-16 sm:mb-32 flex flex-col lg:flex-row items-start lg:justify-between mt-16 sm:mt-32 lg:mt-60 px-4 sm:px-8 gap-8 lg:gap-40"
     >
         <div className="left w-full lg:w-1/3 h-full flex flex-col lg:justify-between py-6 sm:py-10 items-start">
-            <h1 className="w-full sm:w-2/3 font-[Sansita] text-base sm:text-lg lg:text-xl leading-relaxed font-medium mb-6 lg:mb-0">
+            <h1 className="w-full sm:w-2/3 font-[Funnel] text-base sm:text-lg lg:text-xl leading-relaxed font-medium mb-6 lg:mb-0">
                 Discover our cutting-edge
                 blockchain and tokenization
                 solutions across DeFi,
                 infrastructure, and AI.
             </h1>
             <div className="heading">
-                <h1 className="font-[SansitaReg] text-3xl sm:text-4xl lg:text-6xl py-3 sm:py-5 leading-tight">Explore <br/> Our Projects</h1>
+                <h1 className="font-[Funnel] text-3xl sm:text-4xl lg:text-6xl py-3 sm:py-5 leading-tight">Explore <br/> Our Projects</h1>
                 <Link to="/projects">
                     <Button bgColor="bg-white" text="VIEW ALL PROJECTS" />
                 </Link>
             </div>
         </div>
-        <div className="right font-[SansitaReg] mt-6 sm:mt-10 w-full lg:w-2/3 space-y-8 sm:space-y-10 h-full flex flex-col lg:flex-row items-center lg:items-start justify-start gap-8 lg:gap-20">
+        <div className="right font-[Funnel] mt-6 sm:mt-10 w-full lg:w-2/3 space-y-8 sm:space-y-10 h-full flex flex-col lg:flex-row items-center lg:items-start justify-start gap-8 lg:gap-20">
             {/* 1st capsule - Wiener Labs Mission */}
             <div
                 className="capsule flex flex-col items-center gap-4 p-4 sm:p-6 lg:-rotate-[16deg] lg:translate-y-10
@@ -79,7 +79,7 @@ gsap.registerPlugin(ScrollTrigger);
                     <h3>Building the Future <br/>
                         of Web3 & <br/>RWA Tokenization
                     </h3>
-                    <h4 className="font-[Sansita] text-sm sm:text-base font-medium leading-relaxed text-zinc-500">DeFi, Security, <br/> Infrastructure, AI & <br/>
+                    <h4 className="font-[Funnel] text-sm sm:text-base font-medium leading-relaxed text-zinc-500">DeFi, Security, <br/> Infrastructure, AI & <br/>
                         Blockchain Solutions
                     </h4>
                 </div>
@@ -95,7 +95,7 @@ gsap.registerPlugin(ScrollTrigger);
         <div className="w-full max-w-5xl mx-auto">
             {/* Section Header */}
             <div className="mb-6 sm:mb-10">
-                <h2 className="font-[SansitaReg] text-2xl sm:text-3xl lg:text-5xl leading-tight mb-3">
+                <h2 className="font-[Funnel] text-2xl sm:text-3xl lg:text-5xl leading-tight mb-3">
                     Name Origin
                 </h2>
                 <div className="w-12 sm:w-16 h-1 bg-black"></div>
@@ -105,19 +105,19 @@ gsap.registerPlugin(ScrollTrigger);
             <div className="flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-12">
                 {/* Text Section - Always first on mobile */}
                 <div className="w-full lg:w-1/2 order-1">
-                    <h3 className="font-[SansitaBold] text-xl sm:text-2xl lg:text-3xl text-black mb-2">
+                    <h3 className="font-[Funnel] font-bold text-xl sm:text-2xl lg:text-3xl text-black mb-2">
                         Norbert Wiener
                     </h3>
-                    <p className="font-[Sansita] text-sm sm:text-base text-gray-700 mb-4">
+                    <p className="font-[Funnel] text-sm sm:text-base text-gray-700 mb-4">
                         (1894-1964)
                     </p>
-                    <p className="font-[Sansita] text-sm sm:text-base lg:text-lg leading-relaxed text-black mb-4">
-                        Norbert Wiener was the founder of <span className="font-[SansitaBold]">cybernetics</span> and
-                        a pioneer of <span className="font-[SansitaBold]">system theory</span>. His groundbreaking work
+                    <p className="font-[Funnel] text-sm sm:text-base lg:text-lg leading-relaxed text-black mb-4">
+                        Norbert Wiener was the founder of <span className="font-[Funnel] font-bold">cybernetics</span> and
+                        a pioneer of <span className="font-[Funnel] font-bold">system theory</span>. His groundbreaking work
                         laid the foundation for understanding complex systems, automation, and information flow.
                     </p>
-                    <p className="font-[Sansita] text-sm sm:text-base lg:text-lg leading-relaxed text-black">
-                        <span className="font-[SansitaBold]">Wiener Labs</span> adopted this name with a vision to
+                    <p className="font-[Funnel] text-sm sm:text-base lg:text-lg leading-relaxed text-black">
+                        <span className="font-[Funnel] font-bold">Wiener Labs</span> adopted this name with a vision to
                         automate complex systems and transfer data flow to decentralized infrastructures.
                     </p>
                 </div>
@@ -131,8 +131,8 @@ gsap.registerPlugin(ScrollTrigger);
                             className="w-full h-full object-cover"
                         />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-2 sm:p-3">
-                            <p className="font-[Sansita] text-white text-xs sm:text-sm">Norbert Wiener</p>
-                            <p className="font-[Sansita] text-white/80 text-[10px] sm:text-xs">Founder of Cybernetics</p>
+                            <p className="font-[Funnel] text-white text-xs sm:text-sm">Norbert Wiener</p>
+                            <p className="font-[Funnel] text-white/80 text-[10px] sm:text-xs">Founder of Cybernetics</p>
                         </div>
                     </div>
                 </div>

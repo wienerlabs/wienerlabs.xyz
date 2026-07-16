@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { projectsData } from '../data/projectsData';
+import ProjectMark from '../components/ProjectMark';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,8 +40,8 @@ function ProjectDetailPage() {
         return (
             <div className="min-h-screen bg-[var(--light)] flex items-center justify-center">
                 <div className="text-center">
-                    <h1 className="font-[SansitaBold] text-4xl mb-4">Project Not Found</h1>
-                    <Link to="/projects" className="font-[Sansita] text-lg text-blue-600 hover:underline">
+                    <h1 className="font-[Funnel] font-bold text-4xl mb-4">Project Not Found</h1>
+                    <Link to="/projects" className="font-[Funnel] text-lg text-blue-600 hover:underline">
                         ← Back to Projects
                     </Link>
                 </div>
@@ -67,42 +68,42 @@ function ProjectDetailPage() {
 
     return (
         <div ref={containerRef} className="min-h-screen bg-[var(--light)] pb-20">
-            {/* Header with Image */}
-            <div className="detail-header relative h-[50vh] min-h-[400px] overflow-hidden">
-                <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                
-                {/* Back Button */}
-                <button 
-                    onClick={() => navigate('/projects')}
-                    className="absolute top-8 left-8 flex items-center gap-2 text-white hover:opacity-70 transition-colors font-[Sansita] text-lg z-10"
-                >
-                    <span className="text-2xl">←</span>
-                    <span>Back to Projects</span>
-                </button>
+            {/* Header */}
+            <div className="detail-header bg-black text-white">
+                <div className="max-w-6xl mx-auto px-6 sm:px-8 pt-12 pb-14">
+                    <button
+                        onClick={() => navigate('/projects')}
+                        className="flex items-center gap-2 text-white/80 hover:text-white hover:-translate-x-1 transition-all font-[Funnel] text-base mb-12"
+                    >
+                        <span className="text-xl leading-none">←</span>
+                        <span>Back to Projects</span>
+                    </button>
 
-                {/* Title Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-                    <div className="max-w-6xl mx-auto">
-                        <div className="flex flex-wrap gap-3 mb-4">
-                            <span className={`font-[Sansita] px-4 py-1 rounded-full text-sm text-white ${statusColor[project.status] || 'bg-gray-500'}`}>
-                                {project.status}
-                            </span>
-                            <span className="font-[Sansita] px-4 py-1 rounded-full text-sm bg-white text-black border border-black">
-                                {project.category}
-                            </span>
-                            {project.priority && (
-                                <span className={`font-[Sansita] px-4 py-1 rounded-full text-sm text-white ${priorityColor[project.priority] || 'bg-gray-500'}`}>
-                                    Priority {project.priority}
-                                </span>
-                            )}
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-8">
+                        <div className="bg-white rounded-[28px] p-1.5 w-fit shrink-0">
+                            <ProjectMark
+                                project={project}
+                                className="w-28 h-28 md:w-32 md:h-32 rounded-[22px]"
+                                textClass="text-6xl"
+                            />
                         </div>
-                        <h1 className="font-[SansitaBold] text-4xl md:text-6xl text-white mb-3">{project.title}</h1>
-                        <p className="font-[Sansita] text-xl md:text-2xl text-gray-200">{project.subtitle}</p>
+                        <div>
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                <span className={`font-[Funnel] px-4 py-1 rounded-full text-sm text-white ${statusColor[project.status] || 'bg-gray-500'}`}>
+                                    {project.status}
+                                </span>
+                                <span className="font-[Funnel] px-4 py-1 rounded-full text-sm bg-white text-black">
+                                    {project.category}
+                                </span>
+                                {project.priority && (
+                                    <span className={`font-[Funnel] px-4 py-1 rounded-full text-sm text-white ${priorityColor[project.priority] || 'bg-gray-500'}`}>
+                                        Priority {project.priority}
+                                    </span>
+                                )}
+                            </div>
+                            <h1 className="font-[Funnel] font-bold text-4xl md:text-6xl mb-3">{project.title}</h1>
+                            <p className="font-[Funnel] text-xl md:text-2xl text-gray-300 leading-relaxed">{project.subtitle}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,8 +114,8 @@ function ProjectDetailPage() {
                 {project.progress !== undefined && (
                     <div className="mb-10 p-6 bg-white rounded-2xl border-2 border-black">
                         <div className="flex justify-between items-center mb-3">
-                            <span className="font-[SansitaBold] text-xl">Project Progress</span>
-                            <span className="font-[SansitaBold] text-2xl">{project.progress}%</span>
+                            <span className="font-[Funnel] font-bold text-xl">Project Progress</span>
+                            <span className="font-[Funnel] font-bold text-2xl">{project.progress}%</span>
                         </div>
                         <div className="h-4 bg-gray-200 rounded-full overflow-hidden">
                             <div
@@ -130,8 +131,8 @@ function ProjectDetailPage() {
                     <div className="lg:col-span-2 space-y-8">
                         {/* Description */}
                         <div className="bg-white p-8 rounded-2xl border-2 border-black">
-                            <h2 className="font-[SansitaBold] text-2xl mb-4">About</h2>
-                            <p className="font-[Sansita] text-lg text-gray-700 leading-relaxed">
+                            <h2 className="font-[Funnel] font-bold text-2xl mb-4">About</h2>
+                            <p className="font-[Funnel] text-lg text-gray-700 leading-relaxed">
                                 {project.description}
                             </p>
                         </div>
@@ -139,12 +140,12 @@ function ProjectDetailPage() {
                         {/* Features */}
                         {project.features && project.features.length > 0 && (
                             <div className="bg-white p-8 rounded-2xl border-2 border-black">
-                                <h2 className="font-[SansitaBold] text-2xl mb-4">Key Features</h2>
+                                <h2 className="font-[Funnel] font-bold text-2xl mb-4">Key Features</h2>
                                 <ul className="space-y-3">
                                     {project.features.map((feature, i) => (
                                         <li key={i} className="flex items-start gap-3">
                                             <span className="text-green-500 text-xl mt-1">✓</span>
-                                            <span className="font-[Sansita] text-lg text-gray-700">{feature}</span>
+                                            <span className="font-[Funnel] text-lg text-gray-700">{feature}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -154,10 +155,10 @@ function ProjectDetailPage() {
                         {/* Tech Stack */}
                         {project.tech && project.tech.length > 0 && (
                             <div className="bg-white p-8 rounded-2xl border-2 border-black">
-                                <h2 className="font-[SansitaBold] text-2xl mb-4">Tech Stack</h2>
+                                <h2 className="font-[Funnel] font-bold text-2xl mb-4">Tech Stack</h2>
                                 <div className="flex flex-wrap gap-3">
                                     {project.tech.map((tech, i) => (
-                                        <span key={i} className="font-[Sansita] px-4 py-2 bg-gray-100 rounded-full text-lg border border-gray-300">
+                                        <span key={i} className="font-[Funnel] px-4 py-2 bg-gray-100 rounded-full text-lg border border-gray-300">
                                             {tech}
                                         </span>
                                     ))}
@@ -171,10 +172,10 @@ function ProjectDetailPage() {
                         {/* Team */}
                         {project.team && project.team.length > 0 && (
                             <div className="bg-white p-6 rounded-2xl border-2 border-black">
-                                <h3 className="font-[SansitaBold] text-xl mb-4">Team</h3>
+                                <h3 className="font-[Funnel] font-bold text-xl mb-4">Team</h3>
                                 <ul className="space-y-2">
                                     {project.team.map((member, i) => (
-                                        <li key={i} className="font-[Sansita] text-gray-700 flex items-center gap-2">
+                                        <li key={i} className="font-[Funnel] text-gray-700 flex items-center gap-2">
                                             <span className="w-2 h-2 bg-black rounded-full"></span>
                                             {member}
                                         </li>
@@ -186,17 +187,17 @@ function ProjectDetailPage() {
                         {/* Metrics */}
                         {project.metrics && (
                             <div className="bg-white p-6 rounded-2xl border-2 border-black">
-                                <h3 className="font-[SansitaBold] text-xl mb-4">Metrics</h3>
+                                <h3 className="font-[Funnel] font-bold text-xl mb-4">Metrics</h3>
                                 <div className="space-y-3">
                                     {Object.entries(project.metrics).map(([key, value], i) => {
                                         const longValue = typeof value === 'string' && value.length > 18;
                                         return (
                                             <div key={i} className="flex justify-between items-start gap-3">
-                                                <span className="font-[Sansita] text-gray-600 capitalize shrink-0 whitespace-nowrap">
+                                                <span className="font-[Funnel] text-gray-600 capitalize shrink-0 whitespace-nowrap">
                                                     {key.replace(/([A-Z])/g, ' $1').trim()}
                                                 </span>
                                                 <span
-                                                    className={`text-right min-w-0 break-all ${longValue ? 'font-mono text-[11px] sm:text-xs leading-snug' : 'font-[SansitaBold] text-sm sm:text-base'}`}
+                                                    className={`text-right min-w-0 break-all ${longValue ? 'font-mono text-[11px] sm:text-xs leading-snug' : 'font-[Funnel] font-bold text-sm sm:text-base'}`}
                                                 >
                                                     {value}
                                                 </span>
@@ -210,18 +211,18 @@ function ProjectDetailPage() {
                         {/* Budget & Duration */}
                         {(project.budget || project.duration) && (
                             <div className="bg-white p-6 rounded-2xl border-2 border-black">
-                                <h3 className="font-[SansitaBold] text-xl mb-4">Project Info</h3>
+                                <h3 className="font-[Funnel] font-bold text-xl mb-4">Project Info</h3>
                                 <div className="space-y-3">
                                     {project.budget && (
                                         <div className="flex justify-between items-center">
-                                            <span className="font-[Sansita] text-gray-600">Budget</span>
-                                            <span className="font-[SansitaBold]">{project.budget}</span>
+                                            <span className="font-[Funnel] text-gray-600">Budget</span>
+                                            <span className="font-[Funnel] font-bold">{project.budget}</span>
                                         </div>
                                     )}
                                     {project.duration && (
                                         <div className="flex justify-between items-center">
-                                            <span className="font-[Sansita] text-gray-600">Duration</span>
-                                            <span className="font-[SansitaBold]">{project.duration}</span>
+                                            <span className="font-[Funnel] text-gray-600">Duration</span>
+                                            <span className="font-[Funnel] font-bold">{project.duration}</span>
                                         </div>
                                     )}
                                 </div>
@@ -231,7 +232,7 @@ function ProjectDetailPage() {
                         {/* Links */}
                         {project.links && Object.keys(project.links).length > 0 && (
                             <div className="bg-black p-6 rounded-2xl">
-                                <h3 className="font-[SansitaBold] text-xl mb-4 text-white">Links</h3>
+                                <h3 className="font-[Funnel] font-bold text-xl mb-4 text-white">Links</h3>
                                 <div className="space-y-3">
                                     {Object.entries(project.links).map(([key, url], i) => (
                                         <a
@@ -239,7 +240,7 @@ function ProjectDetailPage() {
                                             href={url}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center justify-between font-[Sansita] text-white hover:opacity-70 transition-colors"
+                                            className="flex items-center justify-between font-[Funnel] text-white hover:opacity-70 transition-colors"
                                         >
                                             <span className="capitalize">{key}</span>
                                             <span>→</span>
@@ -261,8 +262,8 @@ function ProjectDetailPage() {
                             >
                                 <span className="text-3xl group-hover:-translate-x-2 transition-transform">←</span>
                                 <div>
-                                    <p className="font-[Sansita] text-sm text-gray-500">Previous</p>
-                                    <p className="font-[SansitaBold] text-lg">{prevProject.title}</p>
+                                    <p className="font-[Funnel] text-sm text-gray-500">Previous</p>
+                                    <p className="font-[Funnel] font-bold text-lg">{prevProject.title}</p>
                                 </div>
                             </Link>
                         ) : <div />}
@@ -273,8 +274,8 @@ function ProjectDetailPage() {
                                 className="group flex items-center gap-3 hover:opacity-70 transition-opacity text-right"
                             >
                                 <div>
-                                    <p className="font-[Sansita] text-sm text-gray-500">Next</p>
-                                    <p className="font-[SansitaBold] text-lg">{nextProject.title}</p>
+                                    <p className="font-[Funnel] text-sm text-gray-500">Next</p>
+                                    <p className="font-[Funnel] font-bold text-lg">{nextProject.title}</p>
                                 </div>
                                 <span className="text-3xl group-hover:translate-x-2 transition-transform">→</span>
                             </Link>

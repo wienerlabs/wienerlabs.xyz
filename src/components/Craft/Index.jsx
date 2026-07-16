@@ -89,13 +89,13 @@ function Craft() {
           items-start md:items-center px-4 sm:px-8 py-8 relative"
     >
         <div className="ltext md:sticky md:top-[10%] left-0 w-full md:w-1/2">
-            <p className="ptag font-[Sansita] text-sm sm:text-base lg:text-lg font-medium leading-relaxed">
+            <p className="ptag font-[Funnel] text-sm sm:text-base lg:text-lg font-medium leading-relaxed">
                 Wiener Labs builds infrastructure where smart contracts replace brokers.
                 We transform yield sources into programmable tokens with embedded financial logic-
                 managed by algorithms, not intermediaries. Every asset becomes tradeable,
                 every yield becomes programmable.
             </p>
-            <h1 className="texthead font-[SansitaReg] text-2xl sm:text-3xl md:text-4xl lg:text-6xl leading-tight mt-6 sm:mt-10 mb-6 sm:mb-10">The Bond Market for Everything</h1>
+            <h1 className="texthead font-[Funnel] text-2xl sm:text-3xl md:text-4xl lg:text-6xl leading-tight mt-6 sm:mt-10 mb-6 sm:mb-10">The Bond Market for Everything</h1>
             <Link to="/projects">
                 <Button bgColor="bg-none" text="OUR SERVICES" />
             </Link>

@@ -15,7 +15,7 @@ function Button({bgColor, text}) {
         relative cursor-pointer`}
       >
         <span 
-          className={`${styles.spanMask} font-[Sansita] text-[1.8vh] 
+          className={`${styles.spanMask} font-[Funnel] text-[1.8vh] 
           capitalize tracking-normal
           font-semibold`}
         >

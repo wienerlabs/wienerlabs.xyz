@@ -127,7 +127,7 @@ function Home() {
                                 key={index}
                                 onClick={() => handleNavClick(item)}
                                 className={`${styles.links} h-[3vh] relative py[2.4vh] px-[2.2vh] text-center flex flex-col
-                                font-[Sansita] text-[2.1vh] overflow-hidden font-medium leading-[2.5vh]`}
+                                font-[Funnel] text-[2.1vh] overflow-hidden font-medium leading-[2.5vh]`}
                             >
                                 <a className={`atag ${styles.atag} relative`}>{item.name} </a>
                                 <a className={`atag ${styles.atag} relative`}>{item.name} </a>
@@ -180,7 +180,7 @@ function Home() {
                                     }, 300);
                                 }
                             }}
-                            className="font-[SansitaBold] text-white text-4xl py-4 hover:opacity-70 transition-colors"
+                            className="font-[Funnel] font-bold text-white text-4xl py-4 hover:opacity-70 transition-colors"
                         >
                             {item.name}
                         </motion.button>
@@ -223,7 +223,7 @@ function Home() {
                     className=' heading absolute  top-[12%] sm:top-[7%] left-1/2
                     -translate-x-1/2 w-72'
                 >
-                    <h2 className='toptext text-[2.2vh] font-[Sansita] tracking-wide font-medium text-center'>Transforming traditional assets into digital opportunities through blockchain innovation that is</h2>
+                    <h2 className='toptext text-[2.2vh] font-[Funnel] tracking-wide font-medium text-center'>Transforming traditional assets into digital opportunities through blockchain innovation that is</h2>
                 </div>
 
                 <div

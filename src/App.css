@@ -68,16 +68,12 @@ body[theme="salmon"] .section {
 }
 
 @font-face {
-    font-family: 'Sansita';
-    src: url('./assets/fonts/font1.ttf');
+    font-family: 'Funnel';
+    src: url('./assets/fonts/FunnelDisplay.ttf') format('truetype');
+    font-weight: 300 800;
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'SansitaReg';
-    src: url('./assets/fonts/font2.ttf');
-}
-
-@font-face {
-    font-family: 'SansitaBold';
-    src: url('./assets/fonts/font3.ttf');
+body {
+    font-family: 'Funnel', sans-serif;
 }

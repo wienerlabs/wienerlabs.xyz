@@ -62,7 +62,7 @@ function Card() {
                     border-[1px] border-[--black]  py-8 px-8 ">
                         <div className="rightdata w-[10vh] h-[10vh] sm:w-[28vh]  sm:h-[10vh] "
                             dangerouslySetInnerHTML={{ __html: item.image }}/>
-                        <div className=" font-[Sansita]  leftdata">
+                        <div className=" font-[Funnel]  leftdata">
                             <h1 key={index} className="text-[3vh] font-bold whitespace-nowrap sm:text-[2.8vh] sm:font-bold mb-2">{item.title}</h1>
                             <p className="text-[2.2vh]  sm:text-[2vh] font-medium">{item.description}</p>
                         </div>                       

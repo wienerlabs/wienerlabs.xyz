@@ -1,5 +1,3 @@
-import cap1 from "../assets/images/cap1.png";
-import cap2 from "../assets/images/cap2.jpg";
 
 // Active portfolio project images (Twitter / org avatars)
 import covenantImg from "../assets/images/projects/covenant.png";
@@ -23,6 +21,8 @@ import xyraImg from "../assets/images/projects/xyra.png";
 import xqtcImg from "../assets/images/projects/xqtc.png";
 import oppolinkImg from "../assets/images/projects/oppolink.png";
 import forensicImg from "../assets/images/projects/forensic.png";
+import seventhSealImg from "../assets/images/projects/seventhseal.png";
+import wienerMarkImg from "../assets/images/projects/wiener-mark.png";
 
 import zkLokomotiveImg from "../assets/images/zkλ (zk-lokomotive).png";
 import paralyxImg from "../assets/images/Paralyx.png";
@@ -37,6 +37,41 @@ import quantlinkImg from "../assets/images/Quantlink.png";
 import swayImg from "../assets/images/Sway.png";
 
 export const projectsData = [
+  {
+    id: 6,
+    title: "DanteGPU",
+    subtitle: "Distributed GPU Computing for AI Agents on Solana",
+    description:
+      "DanteGPU is a platform enabling AI agents to efficiently utilize distributed GPU resources through the Solana blockchain. Democratizing access to computational power for AI development.",
+    image: danteGPUImg,
+    hasCustomImage: true,
+    category: "Infrastructure",
+    status: "Launched",
+    priority: "S",
+    progress: 100,
+    tech: ["Solana", "Rust", "Python", "CUDA", "React"],
+    features: [
+      "Distributed GPU network",
+      "AI agent integration",
+      "Blockchain coordination",
+      "Cost-effective compute",
+      "Scalable infrastructure",
+    ],
+    team: [
+      "kh0ra",
+      "wilsonvella",
+      "antigaporia",
+      "Salih Eryilmaz",
+    ],
+    links: {
+      github: "https://github.com/dante-gpu",
+    },
+    metrics: {
+      completion: "60%",
+      valuation: "$15M (Jan 2025)",
+      spent: "$150,000",
+    },
+  },
   // ===== ACTIVE PORTFOLIO PROJECTS (Devnet) =====
   {
     id: 106,
@@ -207,6 +242,7 @@ export const projectsData = [
     links: {
       github: "https://github.com/wienerlabs/seel",
       twitter: "https://x.com/seelprotocol",
+      website: "https://www.seelprotocol.xyz/",
     },
   },
 
@@ -376,41 +412,6 @@ export const projectsData = [
     },
   },
   {
-    id: 6,
-    title: "DanteGPU",
-    subtitle: "Distributed GPU Computing for AI Agents on Solana",
-    description:
-      "DanteGPU is a platform enabling AI agents to efficiently utilize distributed GPU resources through the Solana blockchain. Democratizing access to computational power for AI development.",
-    image: danteGPUImg,
-    hasCustomImage: true,
-    category: "Infrastructure",
-    status: "Launched",
-    priority: "S",
-    progress: 100,
-    tech: ["Solana", "Rust", "Python", "CUDA", "React"],
-    features: [
-      "Distributed GPU network",
-      "AI agent integration",
-      "Blockchain coordination",
-      "Cost-effective compute",
-      "Scalable infrastructure",
-    ],
-    team: [
-      "kh0ra",
-      "wilsonvella",
-      "antigaporia",
-      "Salih Eryilmaz",
-    ],
-    links: {
-      github: "https://github.com/dante-gpu",
-    },
-    metrics: {
-      completion: "60%",
-      valuation: "$15M (Jan 2025)",
-      spent: "$150,000",
-    },
-  },
-  {
     id: 7,
     title: "Omnisphere",
     subtitle: "Cross-Chain Liquidity Protocol with Atomic Composition",
@@ -445,7 +446,6 @@ export const projectsData = [
     subtitle: "High-Speed DeFi Arbitrage System",
     description:
       "Advanced arbitrage trading system for identifying and executing profitable trades across decentralized exchanges.",
-    image: cap1,
     category: "DeFi",
     status: "Launched",
     progress: 100,
@@ -459,7 +459,6 @@ export const projectsData = [
     subtitle: "Next-Generation Automated Market Maker",
     description:
       "Innovative AMM design with improved capital efficiency and reduced impermanent loss.",
-    image: cap2,
     category: "DeFi",
     status: "Launched",
     progress: 100,
@@ -473,7 +472,6 @@ export const projectsData = [
     subtitle: "Time-Weighted Token Swap Protocol",
     description:
       "Decentralized exchange with time-weighted average pricing for reduced slippage.",
-    image: cap1,
     category: "DeFi",
     status: "Launched",
     progress: 100,
@@ -487,7 +485,6 @@ export const projectsData = [
     subtitle: "Dynamic Staking Protocol",
     description:
       "Flexible staking solution with customizable lock periods and reward structures.",
-    image: cap2,
     category: "DeFi",
     status: "Launched",
     progress: 100,
@@ -501,7 +498,6 @@ export const projectsData = [
     subtitle: "Yield Optimization Across Time Horizons",
     description:
       "Protocol for optimizing yield across different time spans and risk profiles.",
-    image: cap1,
     category: "DeFi",
     status: "Launched",
     progress: 100,
@@ -515,7 +511,6 @@ export const projectsData = [
     subtitle: "Decentralized Stablecoin Protocol",
     description:
       "Algorithmic stablecoin with innovative stabilization mechanisms.",
-    image: cap2,
     category: "DeFi",
     status: "Launched",
     progress: 100,
@@ -529,7 +524,6 @@ export const projectsData = [
     subtitle: "Balanced DeFi Ecosystem",
     description:
       "Comprehensive DeFi platform with lending, borrowing, and yield farming.",
-    image: cap1,
     category: "DeFi",
     status: "Launched",
     progress: 100,
@@ -543,7 +537,6 @@ export const projectsData = [
     subtitle: "Gamified Stablecoin Platform",
     description:
       "Fun and engaging stablecoin platform with gamification elements.",
-    image: cap2,
     category: "DeFi",
     status: "Launched",
     progress: 100,
@@ -559,7 +552,6 @@ export const projectsData = [
     subtitle: "Zero-Knowledge Token Launchpad",
     description:
       "Privacy-preserving launchpad for fair token distributions using ZK proofs.",
-    image: cap1,
     category: "Launchpad",
     status: "Launched",
     progress: 100,
@@ -573,7 +565,6 @@ export const projectsData = [
     subtitle: "Telegram-Based Token Launch Platform",
     description:
       "Easy-to-use Telegram bot for launching tokens on the Mina Protocol.",
-    image: cap2,
     category: "Launchpad",
     status: "Launched",
     progress: 100,
@@ -586,7 +577,6 @@ export const projectsData = [
     title: "Solana IDO Launchpad",
     subtitle: "Initial DEX Offering Platform on Solana",
     description: "Full-featured IDO platform for launching tokens on Solana.",
-    image: cap1,
     category: "Launchpad",
     status: "Launched",
     progress: 100,
@@ -602,7 +592,6 @@ export const projectsData = [
     subtitle: "Blockchain Development Framework",
     description:
       "Comprehensive framework for rapid blockchain application development.",
-    image: cap2,
     category: "Infrastructure",
     status: "Launched",
     progress: 100,
@@ -615,7 +604,6 @@ export const projectsData = [
     title: "IPFS Gateway",
     subtitle: "Decentralized Storage Gateway",
     description: "High-performance IPFS gateway for decentralized file access.",
-    image: cap1,
     category: "Infrastructure",
     status: "Launched",
     progress: 100,
@@ -629,7 +617,6 @@ export const projectsData = [
     subtitle: "Cross-Chain Transfer Protocol",
     description:
       "Efficient cross-chain transfer protocol for seamless asset movement.",
-    image: cap2,
     category: "Infrastructure",
     status: "Launched",
     progress: 100,
@@ -643,7 +630,6 @@ export const projectsData = [
     subtitle: "Omnichain Application Framework",
     description:
       "Framework for building omnichain applications across multiple blockchains.",
-    image: cap1,
     category: "Infrastructure",
     status: "Launched",
     progress: 100,
@@ -657,7 +643,6 @@ export const projectsData = [
     subtitle: "Intellectual Property Registration on Solana",
     description:
       "Blockchain-based intellectual property registration and verification system.",
-    image: cap2,
     category: "Infrastructure",
     status: "Launched",
     progress: 100,
@@ -673,7 +658,6 @@ export const projectsData = [
     subtitle: "Zero-Knowledge Proofs in OCaml",
     description:
       "ZK proof library and tools built with OCaml for high-assurance applications.",
-    image: cap1,
     category: "Security",
     status: "Launched",
     progress: 100,
@@ -687,7 +671,6 @@ export const projectsData = [
     subtitle: "Zero-Trust Security Framework",
     description:
       "Comprehensive zero-trust security framework for Web3 applications.",
-    image: cap2,
     category: "Security",
     status: "Launched",
     progress: 100,
@@ -701,7 +684,6 @@ export const projectsData = [
     subtitle: "Enterprise Encryption Engine",
     description:
       "High-performance encryption engine using AES-256-GCM with PBKDF2 key derivation.",
-    image: cap1,
     category: "Security",
     status: "Launched",
     progress: 100,
@@ -715,7 +697,6 @@ export const projectsData = [
     subtitle: "Encrypted Data Pipeline",
     description:
       "End-to-end encrypted data pipeline for secure information flow.",
-    image: cap2,
     category: "Security",
     status: "Launched",
     progress: 100,
@@ -746,7 +727,6 @@ export const projectsData = [
     subtitle: "AI-Based Security Auditor",
     description:
       "AI-powered smart contract security auditing and vulnerability detection.",
-    image: cap2,
     category: "AI",
     status: "Launched",
     progress: 100,
@@ -760,7 +740,6 @@ export const projectsData = [
     subtitle: "AI Toolkit for Developers",
     description:
       "Suite of AI-powered development tools for blockchain developers.",
-    image: cap1,
     category: "AI",
     status: "Launched",
     progress: 100,
@@ -776,7 +755,6 @@ export const projectsData = [
     subtitle: "Private Voting on iOS",
     description:
       "Zero-knowledge voting application for iOS with complete ballot privacy.",
-    image: cap2,
     category: "Governance",
     status: "Launched",
     progress: 100,
@@ -790,7 +768,6 @@ export const projectsData = [
     subtitle: "Decentralized Identity Verification",
     description:
       "Privacy-preserving identity verification using zero-knowledge proofs.",
-    image: cap1,
     category: "Governance",
     status: "Launched",
     progress: 100,
@@ -820,7 +797,6 @@ export const projectsData = [
     title: "ETH Trade Bot",
     subtitle: "Automated Ethereum Trading",
     description: "Automated trading bot for Ethereum-based DEXs.",
-    image: cap1,
     category: "Tools",
     status: "Launched",
     progress: 100,
@@ -833,7 +809,6 @@ export const projectsData = [
     title: "Bill Port",
     subtitle: "Crypto Payment Gateway",
     description: "Simple cryptocurrency payment processing for businesses.",
-    image: cap2,
     category: "Tools",
     status: "Launched",
     progress: 100,
@@ -846,7 +821,6 @@ export const projectsData = [
     title: "ETH Shopify",
     subtitle: "E-commerce Crypto Integration",
     description: "Shopify integration for Ethereum and crypto payments.",
-    image: cap1,
     category: "Tools",
     status: "Launched",
     progress: 100,
@@ -859,7 +833,6 @@ export const projectsData = [
     title: "Stream Lens",
     subtitle: "Real-time Blockchain Analytics",
     description: "Real-time streaming analytics for blockchain data.",
-    image: cap2,
     category: "Tools",
     status: "Launched",
     progress: 100,
@@ -873,7 +846,6 @@ export const projectsData = [
     subtitle: "Rust-based DOM Manipulation",
     description:
       "High-performance DOM manipulation library written in Rust/WASM.",
-    image: cap1,
     category: "Tools",
     status: "Launched",
     progress: 100,
@@ -903,7 +875,6 @@ export const projectsData = [
     title: "Cheeseart",
     subtitle: "NFT Art Platform",
     description: "Creative NFT art platform for digital artists.",
-    image: cap1,
     category: "Consumer App",
     status: "Launched",
     progress: 100,
@@ -916,7 +887,6 @@ export const projectsData = [
     title: "Stable Charity",
     subtitle: "Crypto Donation Platform",
     description: "Transparent charity donation platform using stablecoins.",
-    image: cap2,
     category: "Consumer App",
     status: "Launched",
     progress: 100,
@@ -932,7 +902,6 @@ export const projectsData = [
     subtitle: "Zero-Knowledge Education Platform",
     description:
       "Educational platform teaching zero-knowledge cryptography concepts.",
-    image: cap1,
     category: "Education",
     status: "Launched",
     progress: 100,
@@ -945,7 +914,6 @@ export const projectsData = [
     title: "Fundamental",
     subtitle: "Blockchain Research Platform",
     description: "Research and analytics platform for blockchain fundamentals.",
-    image: cap2,
     category: "Education",
     status: "Launched",
     progress: 100,
@@ -976,7 +944,6 @@ export const projectsData = [
     subtitle: "Blockchain R&D Laboratory",
     description:
       "Research and development lab for experimental blockchain projects.",
-    image: cap2,
     category: "Other",
     status: "Launched",
     progress: 100,
@@ -989,7 +956,6 @@ export const projectsData = [
     title: "Solphi",
     subtitle: "Solana DeFi Aggregator",
     description: "DeFi aggregator for optimal swap routes on Solana.",
-    image: cap1,
     category: "DeFi",
     status: "Launched",
     progress: 100,
@@ -1003,7 +969,6 @@ export const projectsData = [
     subtitle: "Cross-Chain Query Protocol",
     description:
       "Query protocol for fetching data across multiple blockchains.",
-    image: cap2,
     category: "Infrastructure",
     status: "Launched",
     progress: 100,
@@ -1016,7 +981,6 @@ export const projectsData = [
     title: "TrustQuick",
     subtitle: "Fast Trust Score System",
     description: "Quick and reliable trust scoring for DeFi protocols.",
-    image: cap1,
     category: "Security",
     status: "Launched",
     progress: 100,
@@ -1029,7 +993,6 @@ export const projectsData = [
     title: "Sittaris",
     subtitle: "Stellar Network Tools",
     description: "Development tools and utilities for Stellar network.",
-    image: cap2,
     category: "Tools",
     status: "Launched",
     progress: 100,
@@ -1042,7 +1005,6 @@ export const projectsData = [
     title: "Adversei",
     subtitle: "Adversarial Testing Framework",
     description: "Framework for adversarial testing of smart contracts.",
-    image: cap1,
     category: "Security",
     status: "Launched",
     progress: 100,
@@ -1087,7 +1049,6 @@ export const projectsData = [
     subtitle: "Halal Spot DEX on Solana",
     description:
       "Halal spot DEX on Solana: batch auction AMM with an on-chain shariah compliance registry, musharakah-based liquidity, and gold-quoted markets.",
-    image: cap1,
     category: "DeFi",
     status: "Launched",
     priority: "S",
@@ -1100,7 +1061,6 @@ export const projectsData = [
     subtitle: "Secure, Reusable Solana Token Launchpad",
     description:
       "Token launchpad built as an orchestration layer over audited, already-deployed on-chain programs: zero custom contracts, zero private-key custody. Every transaction is signed via a wallet or a Squads multisig, simulated and previewed before signing.",
-    image: cap2,
     category: "Launchpad",
     status: "Launched",
     priority: "A",
@@ -1113,7 +1073,8 @@ export const projectsData = [
     subtitle: "Futarchy-Governed Token Launchpad",
     description:
       "Futarchy-governed token launchpad for Solana with a full on-chain program suite: futarchy governance, conditional vaults, TWAP oracle, launchpad, bid wall, and liquidation, plus indexer, SDK, REST API, and web frontend. Built on the MetaDAO futarchy stack.",
-    image: cap1,
+    image: wienerMarkImg,
+    hasCustomImage: true,
     category: "Launchpad",
     status: "Launched",
     priority: "S",
@@ -1140,7 +1101,8 @@ export const projectsData = [
     subtitle: "Activity-Aware Task Synthesis",
     description:
       "Watches engineering activity across the organization's repositories, synthesizes tasks and daily briefs from real events, and serves an operations dashboard. The system watches; you confirm.",
-    image: cap1,
+    image: wienerMarkImg,
+    hasCustomImage: true,
     category: "Tools",
     status: "Launched",
     priority: "A",
@@ -1153,7 +1115,8 @@ export const projectsData = [
     subtitle: "Multiplayer AI-Narrated Tabletop RPG",
     description:
       "Multiplayer pixel-art tabletop RPG on a procedurally generated, seed-born continent: hex overworld travel, a living world simulation with armies and caravans, tactical battles, and a single AI game master driving both map and chat.",
-    image: cap2,
+    image: seventhSealImg,
+    hasCustomImage: true,
     category: "Consumer App",
     status: "Launched",
     priority: "A",
@@ -1232,7 +1195,6 @@ export const projectsData = [
     subtitle: "Complete Business Automation",
     description:
       "Complete business automation platform: we handle all tasks, you relax. Agent-driven operations covering routine business workflows end to end.",
-    image: cap1,
     category: "AI Agents",
     status: "Launched",
     priority: "B",
@@ -1245,7 +1207,6 @@ export const projectsData = [
     subtitle: "The Colosseum Runs on Code",
     description:
       "AI gladiators duel 1v1 with sponsor pots; players field 3v3 parties for ranked and wagered PvP. On Solana.",
-    image: cap2,
     category: "Consumer App",
     status: "Launched",
     priority: "A",
@@ -1261,7 +1222,6 @@ export const projectsData = [
     subtitle: "Onchain Fantasy Football",
     description:
       "A live, onchain fantasy football game themed around the 2026 World Cup.",
-    image: cap1,
     category: "Consumer App",
     status: "Launched",
     priority: "B",
@@ -1309,7 +1269,8 @@ export const projectsData = [
     subtitle: "Browser-Native Image Toolkit",
     description:
       "Browser-native image toolkit: compress, convert, edit, generate. 100% client-side, nothing leaves the browser.",
-    image: cap2,
+    image: wienerMarkImg,
+    hasCustomImage: true,
     category: "Tools",
     status: "Launched",
     priority: "B",
@@ -1326,7 +1287,8 @@ export const projectsData = [
     subtitle: "Paste URL, Get MP4",
     description:
       "macOS video downloader by Wiener Labs: paste a URL and get an MP4. Tauri + yt-dlp + ffmpeg, fully local.",
-    image: cap1,
+    image: wienerMarkImg,
+    hasCustomImage: true,
     category: "Tools",
     status: "Launched",
     priority: "B",
@@ -1355,7 +1317,6 @@ export const projectsData = [
     title: "Mindflayer",
     subtitle: "X Automation Tool",
     description: "X automation tool for scheduled, policy-driven account operations.",
-    image: cap1,
     category: "Tools",
     status: "Launched",
     priority: "C",
@@ -1368,7 +1329,8 @@ export const projectsData = [
     subtitle: "Internal Time Tracking",
     description:
       "Wiener Labs internal time tracker built on the Solidtime stack, with staged Turkish localization and Wiener branding.",
-    image: cap2,
+    image: wienerMarkImg,
+    hasCustomImage: true,
     category: "Tools",
     status: "Launched",
     priority: "C",
@@ -1381,7 +1343,8 @@ export const projectsData = [
     subtitle: "Tailnet-Native Home Server Control Plane",
     description:
       "Tailnet-native control plane that turns a Mac mini into a home server you can fully power down at will. Rust daemon plus Next.js dashboard and the wenvoy CLI.",
-    image: cap1,
+    image: wienerMarkImg,
+    hasCustomImage: true,
     category: "Infrastructure",
     status: "Launched",
     priority: "B",
@@ -1425,7 +1388,6 @@ export const projectsData = [
     subtitle: "Etymology & Abjad Calculator",
     description:
       "Minimalist contemplation tool that computes a name's etymological root, letter architecture, and classical abjad (ebced) value. Turkish interface with AI-assisted analysis and the classical ebced-i kebir table.",
-    image: cap2,
     category: "Consumer App",
     status: "Launched",
     priority: "C",
@@ -1438,7 +1400,6 @@ export const projectsData = [
     subtitle: "Turkish-Interface Virtual Tabletop",
     description:
       "Turkish-interface virtual tabletop for running D&D 5e campaigns online.",
-    image: cap1,
     category: "Consumer App",
     status: "Launched",
     priority: "C",
@@ -1451,7 +1412,6 @@ export const projectsData = [
     subtitle: "Minimalist Drone Swarm Coordination",
     description:
       "Swarm coordination enabling multiple drones to operate collectively through peer-to-peer communication without a central controller: position broadcasting, collision avoidance, and simple formation protocols in embedded C suitable for flight controllers.",
-    image: cap2,
     category: "Infrastructure",
     status: "Launched",
     priority: "B",
@@ -1467,7 +1427,6 @@ export const projectsData = [
     subtitle: "CRDT-Based Distributed Consensus",
     description:
       "Distributed consensus mechanism achieving eventual consistency through mathematically proven convergence properties of conflict-free replicated data types (CRDTs).",
-    image: cap1,
     category: "Infrastructure",
     status: "Launched",
     priority: "B",
@@ -1483,7 +1442,6 @@ export const projectsData = [
     subtitle: "ML-Driven State Compression",
     description:
       "State compression system leveraging machine learning to identify recurring transaction patterns and predict future state transitions, achieving logarithmic storage requirements while maintaining cryptographic verifiability through differential compression proofs.",
-    image: cap2,
     category: "Infrastructure",
     status: "Launched",
     priority: "B",
@@ -1499,7 +1457,6 @@ export const projectsData = [
     subtitle: "Continuous RL for LLMs",
     description:
       "Reinforcement learning system that enables an LLM to learn continuously from real-world human interactions rather than static internet data, using preference-based feedback mechanisms.",
-    image: cap1,
     category: "Other",
     status: "Launched",
     priority: "B",
@@ -1515,7 +1472,6 @@ export const projectsData = [
     subtitle: "Logarithmic State Verification Primitive",
     description:
       "Cryptographic primitive enabling logarithmic-cost verification of computational state transitions through homomorphic commitment aggregation, allowing dispute resolution at arbitrary granularity without full re-execution.",
-    image: cap2,
     category: "Infrastructure",
     status: "Launched",
     priority: "B",
