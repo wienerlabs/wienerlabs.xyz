@@ -1,5 +1,5 @@
 :root {
-    --lime: #fef3dc;
+    --lime: #fff;
     --black: #000;
     --light: #fff;
     --dlime: #3d3a2f;
@@ -11,8 +11,16 @@ body {
 }
 
 *::selection {
-    background-color: var(--lime);
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--light);
+}
+
+.logo img {
+    transition: filter ease-out 0.5s;
+}
+
+body[theme="black"] .logo img {
+    filter: invert(1);
 }
 
 

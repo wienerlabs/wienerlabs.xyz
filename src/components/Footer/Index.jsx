@@ -6,12 +6,12 @@ import Button from  '../Button'
 function Footer() {
   return (
     <div id="contact" className="section w-full mt-16 sm:mt-24">
-      <div className="topfoot bg-[#fef3dc] pt-10 sm:pt-16 pb-10 sm:pb-16 flex flex-col md:flex-row items-start md:items-center justify-between px-4 sm:px-8">
+      <div className="topfoot bg-white pt-10 sm:pt-16 pb-10 sm:pb-16 flex flex-col md:flex-row items-start md:items-center justify-between px-4 sm:px-8">
         <div className="left w-full md:w-1/2 mb-6 md:mb-0">
           <div className="first font-[SansitaReg] text-2xl sm:text-3xl lg:text-5xl leading-tight mb-4 sm:mb-6">
             <h1>Discover Wiener Labs.</h1>
           </div>
-          <Link to="/projects" className='inline-block px-4 py-3 bg-[--black] text-[#fef3dc]'>
+          <Link to="/projects" className='inline-block px-4 py-3 bg-[--black] text-white'>
             <div className={`${styles.masker} flex items-center gap-2 overflow-hidden relative cursor-pointer`}>
               <span className={`${styles.spanMask} font-[Sansita] text-sm sm:text-base capitalize tracking-normal font-semibold`}>
                 VIEW PROJECTS
@@ -86,7 +86,7 @@ function Footer() {
                 placeholder="Enter your email address"
                 className="bg-[var(--light)] w-full sm:w-[280px] lg:w-[350px] h-12 px-4 text-sm sm:text-base"
               />
-              <Button text="SUBSCRIBE" bgColor="bg-[#fef3dc]" />
+              <Button text="SUBSCRIBE" bgColor="bg-white" />
             </div>
           </div>
           <div className='hidden md:inline-block'>

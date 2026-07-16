@@ -372,7 +372,7 @@ function MemberProfile({ member, onClose }) {
             <div className="profile-container bg-white w-full max-w-7xl max-h-[95vh] overflow-y-auto rounded-2xl relative my-8">
                 <button
                     onClick={handleClose}
-                    className="sticky top-4 right-4 float-right z-10 w-14 h-14 bg-black text-[#fef3dc] rounded-full flex items-center justify-center hover:bg-[#fef3dc] hover:text-black transition-all duration-300 font-bold text-3xl shadow-lg"
+                    className="sticky top-4 right-4 float-right z-10 w-14 h-14 bg-black text-white rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300 font-bold text-3xl shadow-lg"
                 >
                     ×
                 </button>
@@ -385,7 +385,7 @@ function MemberProfile({ member, onClose }) {
                                     {member.img ? (
                                         <img src={member.img} alt={member.title} className="w-full h-full object-cover object-center" />
                                     ) : (
-                                        <div className="w-full h-full bg-gradient-to-br from-[#fef3dc] to-[#d4c4a8] flex items-center justify-center">
+                                        <div className="w-full h-full bg-gradient-to-br from-white to-[#d4d4d4] flex items-center justify-center">
                                             <span className="text-6xl font-[SansitaBold] text-[#3d3a2f]">
                                                 {member.title.split(' ').map(n => n[0]).join('').slice(0, 2)}
                                             </span>
@@ -416,12 +416,12 @@ function MemberProfile({ member, onClose }) {
 
                         <div className="lg:col-span-2 space-y-8">
                             <div className="profile-section">
-                                <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-[#fef3dc] pb-2">About</h2>
+                                <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">About</h2>
                                 <p className="font-[Sansita] text-lg text-gray-700 leading-relaxed mb-6">{member.bio}</p>
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                                     {member.achievements.map((achievement, index) => (
-                                        <div key={index} className="flex items-start gap-3 bg-[#fef3dc] p-4 rounded-lg border-2 border-black">
+                                        <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-lg border-2 border-black">
                                             <span className="text-2xl">🏆</span>
                                             <p className="font-[Sansita] text-sm">{achievement}</p>
                                         </div>
@@ -430,12 +430,12 @@ function MemberProfile({ member, onClose }) {
                             </div>
 
                             <div className="profile-section">
-                                <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-[#fef3dc] pb-2">Expertise</h2>
+                                <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">Expertise</h2>
                                 <div className="flex flex-wrap gap-3">
                                     {member.expertise.map((skill, index) => (
                                         <span
                                             key={index}
-                                            className="font-[Sansita] text-sm bg-black text-[#fef3dc] px-4 py-2 rounded-full border-2 border-black hover:bg-[#fef3dc] hover:text-black transition-all duration-300 cursor-default"
+                                            className="font-[Sansita] text-sm bg-black text-white px-4 py-2 rounded-full border-2 border-black hover:bg-white hover:text-black transition-all duration-300 cursor-default"
                                         >
                                             {skill}
                                         </span>
@@ -445,7 +445,7 @@ function MemberProfile({ member, onClose }) {
 
                             {member.technicalSkills && Object.keys(member.technicalSkills).length > 0 && (
                                 <div className="profile-section">
-                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-6 border-b-4 border-[#fef3dc] pb-2">Technical Skills</h2>
+                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-6 border-b-4 border-black pb-2">Technical Skills</h2>
                                     <div className="space-y-6">
                                         {Object.entries(member.technicalSkills).map(([category, items]) => {
                                             const accent = SKILL_CATEGORY_ACCENTS[category] ?? DEFAULT_ACCENT;
@@ -493,7 +493,7 @@ function MemberProfile({ member, onClose }) {
 
                             {!loading && githubAccounts.length > 0 && (
                                 <div className="profile-section">
-                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-[#fef3dc] pb-2">Key Projects</h2>
+                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">Key Projects</h2>
                                     <div className="space-y-4">
                                         {githubAccounts.map((account) =>
                                             account.repos.slice(0, 6).map((repo) => (
@@ -502,7 +502,7 @@ function MemberProfile({ member, onClose }) {
                                                     href={repo.html_url}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="block border-2 border-black rounded-lg p-5 hover:shadow-xl transition-all duration-300 bg-white hover:bg-[#fef3dc]/20"
+                                                    className="block border-2 border-black rounded-lg p-5 hover:shadow-xl transition-all duration-300 bg-white hover:bg-black/5"
                                                 >
                                                     <div className="flex items-start justify-between mb-2">
                                                         <h3 className="font-[SansitaBold] text-xl flex-1">{repo.name}</h3>
@@ -524,7 +524,7 @@ function MemberProfile({ member, onClose }) {
                                                     )}
                                                     <div className="flex flex-wrap gap-2">
                                                         {repo.language && (
-                                                            <span className="font-[Sansita] text-xs bg-[#fef3dc] text-black px-3 py-1 rounded-full border border-black">
+                                                            <span className="font-[Sansita] text-xs bg-white text-black px-3 py-1 rounded-full border border-black">
                                                                 {repo.language}
                                                             </span>
                                                         )}
@@ -546,16 +546,16 @@ function MemberProfile({ member, onClose }) {
 
                             {loading && (
                                 <div className="profile-section">
-                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-[#fef3dc] pb-2">GitHub Activity</h2>
+                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2">GitHub Activity</h2>
                                     <div className="flex items-center justify-center py-12">
-                                        <div className="animate-spin rounded-full h-16 w-16 border-4 border-[#fef3dc] border-t-black"></div>
+                                        <div className="animate-spin rounded-full h-16 w-16 border-4 border-black/10 border-t-black"></div>
                                     </div>
                                 </div>
                             )}
 
                             {!loading && githubAccounts.map((account, accountIndex) => (
                                 <div key={account.username} className="profile-section">
-                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-[#fef3dc] pb-2 flex items-center gap-3">
+                                    <h2 className="font-[SansitaBold] text-3xl sm:text-4xl mb-4 border-b-4 border-black pb-2 flex items-center gap-3">
                                         <span>GitHub Activity - @{account.username}</span>
                                         <a
                                             href={`https://github.com/${account.username}`}
@@ -568,19 +568,19 @@ function MemberProfile({ member, onClose }) {
                                     </h2>
 
                                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
-                                        <div className="bg-[#fef3dc] p-4 rounded-lg border-2 border-black text-center">
+                                        <div className="bg-white p-4 rounded-lg border-2 border-black text-center">
                                             <p className="font-[SansitaBold] text-3xl">{account.data?.public_repos || 0}</p>
                                             <p className="font-[Sansita] text-sm text-gray-700">Repositories</p>
                                         </div>
-                                        <div className="bg-[#fef3dc] p-4 rounded-lg border-2 border-black text-center">
+                                        <div className="bg-white p-4 rounded-lg border-2 border-black text-center">
                                             <p className="font-[SansitaBold] text-3xl">{account.data?.followers || 0}</p>
                                             <p className="font-[Sansita] text-sm text-gray-700">Followers</p>
                                         </div>
-                                        <div className="bg-[#fef3dc] p-4 rounded-lg border-2 border-black text-center">
+                                        <div className="bg-white p-4 rounded-lg border-2 border-black text-center">
                                             <p className="font-[SansitaBold] text-3xl">{account.data?.following || 0}</p>
                                             <p className="font-[Sansita] text-sm text-gray-700">Following</p>
                                         </div>
-                                        <div className="bg-[#fef3dc] p-4 rounded-lg border-2 border-black text-center">
+                                        <div className="bg-white p-4 rounded-lg border-2 border-black text-center">
                                             <p className="font-[SansitaBold] text-3xl">{account.data?.public_gists || 0}</p>
                                             <p className="font-[Sansita] text-sm text-gray-700">Gists</p>
                                         </div>
@@ -597,8 +597,8 @@ function MemberProfile({ member, onClose }) {
                                                     fontSize={14}
                                                     colorScheme="light"
                                                     theme={{
-                                                        light: ['#f0f0f0', '#fef3dc', '#e6d9b8', '#d4c094', '#c2a770'],
-                                                        dark: ['#f0f0f0', '#fef3dc', '#e6d9b8', '#d4c094', '#c2a770']
+                                                        light: ['#f0f0f0', '#d4d4d4', '#a3a3a3', '#525252', '#171717'],
+                                                        dark: ['#f0f0f0', '#d4d4d4', '#a3a3a3', '#525252', '#171717']
                                                     }}
                                                     style={{
                                                         fontFamily: 'Sansita, sans-serif'
@@ -624,12 +624,12 @@ function MemberProfile({ member, onClose }) {
                                                             rel="noopener noreferrer"
                                                             className={`border-2 rounded-lg p-4 hover:shadow-xl hover:scale-105 transition-all duration-300 relative ${
                                                                 isFeatured
-                                                                    ? 'border-[#fef3dc] bg-[#fef3dc] shadow-lg'
+                                                                    ? 'border-black bg-white shadow-lg'
                                                                     : 'border-black bg-white'
                                                             }`}
                                                         >
                                                             {isFeatured && (
-                                                                <div className="absolute -top-2 -right-2 bg-black text-[#fef3dc] px-3 py-1 rounded-full text-xs font-[SansitaBold] shadow-lg">
+                                                                <div className="absolute -top-2 -right-2 bg-black text-white px-3 py-1 rounded-full text-xs font-[SansitaBold] shadow-lg">
                                                                     ⭐ FEATURED
                                                                 </div>
                                                             )}

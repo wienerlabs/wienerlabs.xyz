@@ -49,7 +49,7 @@ gsap.registerPlugin(ScrollTrigger);
             <div className="heading">
                 <h1 className="font-[SansitaReg] text-3xl sm:text-4xl lg:text-6xl py-3 sm:py-5 leading-tight">Explore <br/> Our Projects</h1>
                 <Link to="/projects">
-                    <Button bgColor="bg-[#fef3dc]" text="VIEW ALL PROJECTS" />
+                    <Button bgColor="bg-white" text="VIEW ALL PROJECTS" />
                 </Link>
             </div>
         </div>
@@ -66,14 +66,14 @@ gsap.registerPlugin(ScrollTrigger);
                         Replace Brokers: <br/> Algorithms Over <br/> Intermediaries
                     </h3>
                 </div>
-                <span className="bg-black text-[#fef3dc] px-4 rounded-full text-sm sm:text-base py-2 sm:py-3 mb-6 sm:mb-10 mt-6 sm:mt-10 font-semibold">Our Mission</span>
+                <span className="bg-black text-white px-4 rounded-full text-sm sm:text-base py-2 sm:py-3 mb-6 sm:mb-10 mt-6 sm:mt-10 font-semibold">Our Mission</span>
             </div>
             {/* 2nd capsule - Wiener Labs Overview */}
             <div
                 className="capsule flex flex-col items-center gap-4 p-4 sm:p-6 lg:-rotate-[16deg] lg:translate-y-40
                 rounded-full border-[1px] border-black w-full max-w-sm lg:max-w-none"
             >
-                <span className="bg-black text-[#fef3dc] px-4 rounded-full text-sm sm:text-base py-2 sm:py-3 mb-4 sm:mb-6 mt-6 sm:mt-10 font-semibold">80+ Projects</span>
+                <span className="bg-black text-white px-4 rounded-full text-sm sm:text-base py-2 sm:py-3 mb-4 sm:mb-6 mt-6 sm:mt-10 font-semibold">80+ Projects</span>
 
                 <div className="text text-center text-lg sm:text-xl lg:text-2xl flex flex-col gap-4 sm:gap-6 mb-4 sm:mb-6 font-semibold leading-relaxed">
                     <h3>Building the Future <br/>
@@ -98,7 +98,7 @@ gsap.registerPlugin(ScrollTrigger);
                 <h2 className="font-[SansitaReg] text-2xl sm:text-3xl lg:text-5xl leading-tight mb-3">
                     Name Origin
                 </h2>
-                <div className="w-12 sm:w-16 h-1 bg-[#fef3dc]"></div>
+                <div className="w-12 sm:w-16 h-1 bg-black"></div>
             </div>
 
             {/* Content - Text first on mobile */}

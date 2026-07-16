@@ -103,7 +103,7 @@ function ProjectsPage() {
                 <div className="max-w-7xl mx-auto">
                     <button 
                         onClick={handleBackClick}
-                        className="flex items-center gap-2 text-[#fef3dc] hover:opacity-70 transition-opacity mb-8 font-[Sansita] text-lg"
+                        className="flex items-center gap-2 text-white hover:opacity-70 transition-opacity mb-8 font-[Sansita] text-lg"
                     >
                         <span className="text-2xl">←</span>
                         <span>Back to Home</span>
@@ -126,7 +126,7 @@ function ProjectsPage() {
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             className="w-full px-6 py-4 pr-12 font-[Sansita] text-lg border-2 border-black rounded-full
-                                focus:outline-none focus:ring-2 focus:ring-[#fef3dc] focus:border-black
+                                focus:outline-none focus:ring-2 focus:ring-white focus:border-black
                                 bg-white placeholder-gray-500"
                         />
                         <span className="absolute right-4 top-1/2 -translate-y-1/2 text-2xl">
@@ -153,7 +153,7 @@ function ProjectsPage() {
                             className={`category-btn font-[Sansita] px-5 py-2 rounded-full border-2 border-black transition-all duration-300 text-base
                                 ${selectedCategory === category
                                     ? 'bg-black text-white'
-                                    : 'bg-[#fef3dc] text-black hover:bg-black hover:text-white'
+                                    : 'bg-white text-black hover:bg-black hover:text-white'
                                 }`}
                         >
                             {category}
@@ -169,7 +169,7 @@ function ProjectsPage() {
                             value={sortBy}
                             onChange={(e) => setSortBy(e.target.value)}
                             className="font-[Sansita] px-4 py-2 border-2 border-black rounded-full bg-white
-                                focus:outline-none focus:ring-2 focus:ring-[#fef3dc] cursor-pointer"
+                                focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
                         >
                             {sortOptions.map((option) => (
                                 <option key={option.value} value={option.value}>
@@ -227,7 +227,7 @@ function ProjectsPage() {
                                         </span>
                                     </div>
                                     <div className="absolute top-4 right-4">
-                                        <span className="font-[Sansita] px-3 py-1 rounded-full text-sm bg-[#fef3dc] text-black border border-black">
+                                        <span className="font-[Sansita] px-3 py-1 rounded-full text-sm bg-white text-black border border-black">
                                             {project.category}
                                         </span>
                                     </div>
@@ -236,7 +236,7 @@ function ProjectsPage() {
                                             <div className="flex items-center gap-2">
                                                 <div className="flex-1 h-2 bg-gray-600 rounded-full overflow-hidden">
                                                     <div
-                                                        className="h-full bg-[#fef3dc] rounded-full transition-all duration-500"
+                                                        className="h-full bg-white rounded-full transition-all duration-500"
                                                         style={{ width: `${project.progress}%` }}
                                                     />
                                                 </div>

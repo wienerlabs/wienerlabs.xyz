@@ -67,7 +67,7 @@ function CardScanner() {
 
     const asciiContent = document.createElement("div");
     asciiContent.className = "ascii-content";
-    asciiContent.style.cssText = `position:absolute;top:0;left:0;width:100%;height:100%;color:rgba(254,243,220,0.7);font-family:'Courier New',monospace;font-size:9px;line-height:11px;overflow:hidden;white-space:pre;animation:glitch 0.1s infinite linear alternate-reverse;-webkit-mask-image:linear-gradient(to right,rgba(0,0,0,1) 0%,rgba(0,0,0,0.6) 50%,rgba(0,0,0,0.2) 100%);`;
+    asciiContent.style.cssText = `position:absolute;top:0;left:0;width:100%;height:100%;color:rgba(255,255,255,0.7);font-family:'Courier New',monospace;font-size:9px;line-height:11px;overflow:hidden;white-space:pre;animation:glitch 0.1s infinite linear alternate-reverse;-webkit-mask-image:linear-gradient(to right,rgba(0,0,0,1) 0%,rgba(0,0,0,0.6) 50%,rgba(0,0,0,0.2) 100%);`;
     asciiContent.textContent = generateCode(53, 18);
     asciiCard.appendChild(asciiContent);
 
@@ -156,15 +156,15 @@ function CardScanner() {
     const particles = [];
     const maxParticles = 300;
 
-    // Particle gradient - cream/gray colors
+    // Particle gradient
     const gradientCanvas = document.createElement("canvas");
     const gradientCtx = gradientCanvas.getContext("2d");
     gradientCanvas.width = 16;
     gradientCanvas.height = 16;
     const half = 8;
     const gradient = gradientCtx.createRadialGradient(half, half, 0, half, half, half);
-    gradient.addColorStop(0, "rgba(254, 243, 220, 1)"); // Cream center
-    gradient.addColorStop(0.3, "rgba(200, 190, 170, 0.7)"); // Light gray
+    gradient.addColorStop(0, "rgba(255, 255, 255, 1)");
+    gradient.addColorStop(0.3, "rgba(200, 200, 200, 0.7)"); // Light gray
     gradient.addColorStop(1, "transparent");
     gradientCtx.fillStyle = gradient;
     gradientCtx.beginPath();
@@ -186,18 +186,18 @@ function CardScanner() {
 
     const drawLightBar = () => {
       const verticalGradient = ctx.createLinearGradient(0, 0, 0, h);
-      verticalGradient.addColorStop(0, "rgba(254, 243, 220, 0)");
-      verticalGradient.addColorStop(fadeZone / h, "rgba(254, 243, 220, 1)");
-      verticalGradient.addColorStop(1 - fadeZone / h, "rgba(254, 243, 220, 1)");
-      verticalGradient.addColorStop(1, "rgba(254, 243, 220, 0)");
+      verticalGradient.addColorStop(0, "rgba(255, 255, 255, 0)");
+      verticalGradient.addColorStop(fadeZone / h, "rgba(255, 255, 255, 1)");
+      verticalGradient.addColorStop(1 - fadeZone / h, "rgba(255, 255, 255, 1)");
+      verticalGradient.addColorStop(1, "rgba(255, 255, 255, 0)");
 
       ctx.globalCompositeOperation = "lighter";
 
       // Outer glow
       const outerGlow = ctx.createLinearGradient(lightBarX - 30, 0, lightBarX + 30, 0);
-      outerGlow.addColorStop(0, "rgba(254, 243, 220, 0)");
-      outerGlow.addColorStop(0.5, "rgba(254, 243, 220, 0.15)");
-      outerGlow.addColorStop(1, "rgba(254, 243, 220, 0)");
+      outerGlow.addColorStop(0, "rgba(255, 255, 255, 0)");
+      outerGlow.addColorStop(0.5, "rgba(255, 255, 255, 0.15)");
+      outerGlow.addColorStop(1, "rgba(255, 255, 255, 0)");
       ctx.globalAlpha = 0.5;
       ctx.fillStyle = outerGlow;
       ctx.beginPath();
@@ -206,9 +206,9 @@ function CardScanner() {
 
       // Core line
       const coreGradient = ctx.createLinearGradient(lightBarX - lightBarWidth, 0, lightBarX + lightBarWidth, 0);
-      coreGradient.addColorStop(0, "rgba(254, 243, 220, 0)");
-      coreGradient.addColorStop(0.5, "rgba(254, 243, 220, 0.9)");
-      coreGradient.addColorStop(1, "rgba(254, 243, 220, 0)");
+      coreGradient.addColorStop(0, "rgba(255, 255, 255, 0)");
+      coreGradient.addColorStop(0.5, "rgba(255, 255, 255, 0.9)");
+      coreGradient.addColorStop(1, "rgba(255, 255, 255, 0)");
       ctx.globalAlpha = 1;
       ctx.fillStyle = coreGradient;
       ctx.beginPath();

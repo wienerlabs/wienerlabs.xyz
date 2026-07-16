@@ -65,7 +65,7 @@ function List({ onMemberClick }) {
               className="listelem w-full px-4 py-4 sm:px-8 sm:py-6 lg:px-[4vh] lg:py-[6vh]
               flex justify-between items-center gap-4
               border-b-2 border-black sm:relative cursor-pointer
-              hover:bg-[#fef3dc] transition-colors duration-300"
+              hover:bg-black/5 transition-colors duration-300"
             >
               <div
                 className="relative flex-1 flex flex-col sm:flex-row
@@ -88,14 +88,14 @@ function List({ onMemberClick }) {
                 {item.img ? (
                   <img src={item.img} className='w-full h-full object-cover' />
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-[#fef3dc] to-[#d4c4a8] flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-to-br from-white to-[#d4d4d4] flex items-center justify-center">
                     <span className="text-xl sm:text-2xl lg:text-5xl font-[SansitaBold] text-[#3d3a2f]">
                       {item.title.split(' ').map(n => n[0]).join('').slice(0, 2)}
                     </span>
                   </div>
                 )}
               </div>
-              <div className="hidden lg:inline-block bluelayer lg:absolute top-0 left-0 z-[2] w-full h-0 bg-[#fef3dc]"></div>
+              <div className="hidden lg:inline-block bluelayer lg:absolute top-0 left-0 z-[2] w-full h-0 bg-black/5"></div>
             </div>
           )
         })}

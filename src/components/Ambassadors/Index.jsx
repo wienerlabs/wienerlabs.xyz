@@ -73,7 +73,7 @@ function Ambassadors() {
                   hover:shadow-2xl hover:-translate-y-1 transition-all duration-300
                   flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-7"
               >
-                <div className="shrink-0 w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-black bg-gradient-to-br from-[#fef3dc] to-[#d4c4a8] flex items-center justify-center">
+                <div className="shrink-0 w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-black bg-gradient-to-br from-white to-[#d4d4d4] flex items-center justify-center">
                   {amb.img ? (
                     <img
                       src={amb.img}
@@ -91,7 +91,7 @@ function Ambassadors() {
                   )}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="inline-block bg-black text-[#fef3dc] px-3 py-1 rounded-full text-[10px] sm:text-xs font-[Sansita] font-semibold tracking-widest uppercase mb-3">
+                  <span className="inline-block bg-black text-white px-3 py-1 rounded-full text-[10px] sm:text-xs font-[Sansita] font-semibold tracking-widest uppercase mb-3">
                     {amb.role}
                   </span>
                   <h3 className="font-[SansitaBold] text-2xl sm:text-3xl mb-1 leading-tight">

@@ -122,7 +122,7 @@ function Partners() {
                 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
             >
               <div className="flex items-start justify-between gap-3 mb-5">
-                <span className="inline-block bg-black text-[#fef3dc] px-3 py-1 rounded-full text-[10px] sm:text-xs font-[Sansita] font-semibold tracking-widest uppercase">
+                <span className="inline-block bg-black text-white px-3 py-1 rounded-full text-[10px] sm:text-xs font-[Sansita] font-semibold tracking-widest uppercase">
                   {partner.category}
                 </span>
                 {partner.logo && (
@@ -186,7 +186,7 @@ function Partners() {
               <div
                 key={i}
                 className="capability-pill font-[SansitaBold] text-sm sm:text-lg lg:text-xl
-                  bg-black text-[#fef3dc] px-5 sm:px-7 py-3 sm:py-4 rounded-full
+                  bg-black text-white px-5 sm:px-7 py-3 sm:py-4 rounded-full
                   border-2 border-black"
               >
                 {area}
@@ -226,9 +226,9 @@ function Partners() {
               <div
                 key={i}
                 className="why-card bg-white border-2 border-black rounded-2xl p-5 sm:p-6 text-center
-                  hover:bg-black hover:text-[#fef3dc] transition-colors duration-300 group cursor-default"
+                  hover:bg-black hover:text-white transition-colors duration-300 group cursor-default"
               >
-                <p className="font-[Sansita] text-[10px] sm:text-xs uppercase tracking-widest text-gray-500 group-hover:text-[#fef3dc]/70 mb-2 transition-colors duration-300">
+                <p className="font-[Sansita] text-[10px] sm:text-xs uppercase tracking-widest text-gray-500 group-hover:text-white/70 mb-2 transition-colors duration-300">
                   {item.label}
                 </p>
                 <p className="font-[SansitaBold] text-base sm:text-xl lg:text-2xl leading-tight">

@@ -47,7 +47,7 @@ function Team() {
         <List />
         <div className="flex items-center justify-center py-20">
           {/* <div onClick={() => setShowModal(true)}>
-            <Button bgColor="bg-[#fef3dc]" text="VIEW ALL TEAM MEMBERS" />
+            <Button bgColor="bg-white" text="VIEW ALL TEAM MEMBERS" />
           </div> */}
         </div>
 

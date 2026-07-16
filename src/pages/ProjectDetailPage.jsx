@@ -79,7 +79,7 @@ function ProjectDetailPage() {
                 {/* Back Button */}
                 <button 
                     onClick={() => navigate('/projects')}
-                    className="absolute top-8 left-8 flex items-center gap-2 text-white hover:text-[#fef3dc] transition-colors font-[Sansita] text-lg z-10"
+                    className="absolute top-8 left-8 flex items-center gap-2 text-white hover:opacity-70 transition-colors font-[Sansita] text-lg z-10"
                 >
                     <span className="text-2xl">←</span>
                     <span>Back to Projects</span>
@@ -92,7 +92,7 @@ function ProjectDetailPage() {
                             <span className={`font-[Sansita] px-4 py-1 rounded-full text-sm text-white ${statusColor[project.status] || 'bg-gray-500'}`}>
                                 {project.status}
                             </span>
-                            <span className="font-[Sansita] px-4 py-1 rounded-full text-sm bg-[#fef3dc] text-black border border-black">
+                            <span className="font-[Sansita] px-4 py-1 rounded-full text-sm bg-white text-black border border-black">
                                 {project.category}
                             </span>
                             {project.priority && (
@@ -239,7 +239,7 @@ function ProjectDetailPage() {
                                             href={url}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center justify-between font-[Sansita] text-[#fef3dc] hover:text-white transition-colors"
+                                            className="flex items-center justify-between font-[Sansita] text-white hover:opacity-70 transition-colors"
                                         >
                                             <span className="capitalize">{key}</span>
                                             <span>→</span>

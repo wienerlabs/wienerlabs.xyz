@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 import { BiMenu, BiX } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom';
+import wienerLogo from '../../assets/images/wiener-logo.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -118,7 +119,7 @@ function Home() {
             >
                 <div className="w-full flex sm:flex items-center justify-between  ">
                     <div className="logo w-[12vh] h-[12vh] sm:w-[16vh] sm:h-[10vh] cursor-pointer z-[9] flex items-center">
-                        <h1 className="font-[SansitaBold] text-[5vh] sm:text-[6vh] tracking-tight">WIENER</h1>
+                        <img src={wienerLogo} alt="WIENER" className="h-[6vh] sm:h-[7vh] w-auto object-contain" />
                     </div>
                     <div className="hidden md:flex gap-2 items-center z-[9] cursor-pointer ">
                         {NAV_ITEMS.map((item, index) => (
@@ -179,7 +180,7 @@ function Home() {
                                     }, 300);
                                 }
                             }}
-                            className="font-[SansitaBold] text-white text-4xl py-4 hover:text-[#fef3dc] transition-colors"
+                            className="font-[SansitaBold] text-white text-4xl py-4 hover:opacity-70 transition-colors"
                         >
                             {item.name}
                         </motion.button>
