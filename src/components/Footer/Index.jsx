@@ -142,7 +142,15 @@ function Footer() {
         </div>
 
         <div className="mt-10 sm:mt-16 pt-8 border-t border-white/15 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-          <span className="font-[Funnel] text-white/60 text-sm">Wiener Labs</span>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <span className="font-[Funnel] text-white/60 text-sm">Wiener Labs</span>
+            <Link
+              to="/privacy"
+              className="font-[Funnel] text-white/60 text-sm hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </Link>
+          </div>
           <div className="flex flex-wrap items-center gap-x-7 gap-y-4">
             {SOCIAL_LINKS.map(({ name, href, Icon }) => (
               <a
